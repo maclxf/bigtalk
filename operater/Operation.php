@@ -6,6 +6,7 @@ abstract class Operation {
 	public $sec;
 
 	public function __construct($first, $sec) {
+
 		$this->first = $first;
 		$this->sec = $sec;
 	}

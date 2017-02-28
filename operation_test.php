@@ -1,18 +1,16 @@
 <?php
-echo time();
 	include_once('operater/Choseoperater.php');
 
 	$action = '+';
 	$number1 = '1';
 	$number2 = '2';
 
-	$operater = new Choseoperater();
+	$choseoperater = new Choseoperater();
 
+	if ($choseoperater) {
+		$operater = $choseoperater->getoperater($action);
 
-	$operat = $operater->getoperater($action);
-
-	if ($operater) {
-		if ($action  && $number1  && $number2 ) {
+		if ($action  && $operater ) {
 			echo $operater->getresult($number1, $number2);
 		} else {
 			echo '请你算算！！';
