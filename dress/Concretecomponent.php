@@ -3,6 +3,8 @@
 include_once('Icomponent.php');
 
 // 这里是extends还是implements
-abstract class Concretecomponent implements Icomponent {
-
+class Concretecomponent implements Icomponent {
+	public function operation () {
+		echo '我穿什么衣服！'
+	}
 }
