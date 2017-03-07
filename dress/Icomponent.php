@@ -1,8 +1,11 @@
 <?php
 
-// 接口中每个方法的权限？
+
 interface Icomponent {
 
-    abstract public function operation();
+    public function operation();
 
 }
+
+// 接口中每个方法的权限？
+// 接口中的方法都不用abstract来说明是抽象方法？

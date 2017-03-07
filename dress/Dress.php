@@ -2,7 +2,8 @@
 
 include_once('Icomponent.php');
 
-abstract class Dress implements Icomponent {
+// 理解为装饰类的基类
+class Dress implements Icomponent {
 	protected $component_obj;
 
 	public function setcomponent ($component_obj) {
