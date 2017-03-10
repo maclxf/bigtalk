@@ -14,3 +14,5 @@ class Dress_v1 extends Person {
 		}
 	}
 }
+
+// 设定需要装饰那个对象

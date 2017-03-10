@@ -14,3 +14,5 @@ class DressA_v1 extends Dress_v1 {
 		echo $this->color . 'T-shirt ';
 	}
 }
+
+// 具体如何装饰

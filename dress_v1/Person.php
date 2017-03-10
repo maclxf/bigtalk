@@ -11,3 +11,5 @@ class Person {
 		echo $this->name . ' 穿的是 ';
 	}
 }
+
+// 提供一个需要装饰的对象
