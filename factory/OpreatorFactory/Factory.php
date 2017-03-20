@@ -1,6 +1,6 @@
 <?php
 
-abstract Factory {
+abstract class Factory {
 	abstract function OpreatorCreater();
 }
 
