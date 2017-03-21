@@ -1,13 +1,11 @@
 <?php
 
-require_once 'Opreator.php';
-
-class AddOpreator {
+class AddOpreator extends Opreator {
     public function __construct(int $NumberA, int $NumberB) {
         parent::__construct($NumberA, $NumberB);
     }
 
     public function getresult() {
-        return ($NumberA + $NumberB);
+        return ($this->NumberA + $this->NumberB);
     }
 }

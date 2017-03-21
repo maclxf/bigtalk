@@ -1,7 +1,7 @@
 <?php
 
 abstract class Factory {
-	abstract function OpreatorCreater();
+	abstract public function OpreatorCreater($a, $b);
 }
 
 // 这时一个工厂抽象类
