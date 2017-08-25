@@ -2,6 +2,7 @@
 // 1. 实现观察者类
 // 希望看到composer的自动加载
 // 依赖注入
+// 测试测试
 
 require_once('./observer/Concretesubject.php');
 require_once('./observer/Concreteobserver.php');
