@@ -1,5 +1,6 @@
 <?php
-require_once('Player.php');
+namespace Facade;
+use Facade\Player;
 
 class Kd35 extends Player{
     public function __construct () {

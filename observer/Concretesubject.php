@@ -1,6 +1,7 @@
 <?php
-require_once('Subject.php');
+namespace observer;
 
+use observer\subject;
 // 具体通知者类
 class Concretesubject extends Subject {
 

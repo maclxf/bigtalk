@@ -1,0 +1,23 @@
+{
+    "name": "lxf/bigtalk",
+    "description": "test object design",
+    "authors": [
+        {
+            "name": "lxf",
+            "email": "46905313@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-4":{
+            "observer\\":["observer/"],
+            "Facade\\":["facade/"]
+        }
+    }
+}

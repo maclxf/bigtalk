@@ -1,4 +1,5 @@
 <?php
+namespace observer;
 // 通知者类
 class Subject {
     // 观察者存储容器

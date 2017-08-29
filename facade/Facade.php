@@ -1,7 +1,9 @@
 <?php
-require_once('facade/D7.php');
-require_once('facade/R9.php');
-require_once('facade/Kd35.php');
+namespace Facade;
+
+use Facade\Kd35;
+use Facade\D7;
+use Facade\R9;
 
 class Facade {
     protected $r9;

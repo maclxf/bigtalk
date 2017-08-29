@@ -1,6 +1,6 @@
 <?php
-require_once('Player.php');
-
+namespace Facade;
+use Facade\Player;
 class R9 extends Player{
     public function __construct () {
         $name = 'Ronaldo';

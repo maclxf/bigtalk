@@ -1,5 +1,5 @@
 <?php
-
+namespace observer;
 // 观察者类
 Interface Iobserver {
     /**

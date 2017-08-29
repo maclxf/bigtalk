@@ -1,5 +1,6 @@
 <?php
-require_once('Iobserver.php');
+namespace observer;
+use observer\iobserver;
 // 观察者类
 class Concreteobserver implements Iobserver {
 

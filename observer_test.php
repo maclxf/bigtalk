@@ -1,10 +1,11 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
 // 1. 实现观察者类
-// 希望看到composer的自动加载
+// 2. 希望看到composer的自动加载
 // 依赖注入
 
-require_once('./observer/Concretesubject.php');
-require_once('./observer/Concreteobserver.php');
+use observer\concretesubject;
+use observer\concreteobserver;
 
 // 通知人
 $tongzhi1 = new Concretesubject('前台张小娴');
