@@ -13,7 +13,7 @@ class Container {
      */
     private $co = [];
 
-    public function __set($key, $value) {
+    public function __set($key, \Closure $value) {
         // new in
         $this->co[$key] = $value;
     }
