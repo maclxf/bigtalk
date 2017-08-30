@@ -1,5 +1,5 @@
 <?php
-//namespace di_ioc;
+namespace di_ioc;
 
 
 /**

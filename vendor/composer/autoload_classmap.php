@@ -6,8 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Facade\\D7' => $baseDir . '/facade/D7.php',
     'Facade\\Facade' => $baseDir . '/facade/Facade.php',
+    'Facade\\Kd35' => $baseDir . '/facade/Kd35.php',
     'Facade\\Player' => $baseDir . '/facade/Player.php',
+    'Facade\\R9' => $baseDir . '/facade/R9.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
     'File_Iterator_Factory' => $vendorDir . '/phpunit/php-file-iterator/src/Factory.php',
@@ -364,6 +367,11 @@ return array(
     'Symfony\\Component\\Yaml\\Unescaper' => $vendorDir . '/symfony/yaml/Unescaper.php',
     'Symfony\\Component\\Yaml\\Yaml' => $vendorDir . '/symfony/yaml/Yaml.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
+    'di_ioc\\Bim' => $baseDir . '/di_ioc/Bim.php',
+    'di_ioc\\Boo' => $baseDir . '/di_ioc/Boo.php',
+    'di_ioc\\Container' => $baseDir . '/di_ioc/Container.php',
+    'di_ioc\\Di' => $baseDir . '/di_ioc/Di.php',
+    'di_ioc\\Foo' => $baseDir . '/di_ioc/Foo.php',
     'observer\\Concreteobserver' => $baseDir . '/observer/Concreteobserver.php',
     'observer\\Concretesubject' => $baseDir . '/observer/Concretesubject.php',
     'observer\\Iobserver' => $baseDir . '/observer/Iobserver.php',

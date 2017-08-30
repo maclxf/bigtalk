@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'observer\\' => array($baseDir . '/observer'),
+    'di_ioc\\' => array($baseDir . '/di_ioc'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
     'Facade\\' => array($baseDir . '/facade'),
 );

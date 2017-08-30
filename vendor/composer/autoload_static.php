@@ -11,6 +11,10 @@ class ComposerStaticInit9b67b77d22cdc5a2c2b4491fe4453deb
         array (
             'observer\\' => 9,
         ),
+        'd' => 
+        array (
+            'di_ioc\\' => 7,
+        ),
         'S' => 
         array (
             'Symfony\\Component\\Yaml\\' => 23,
@@ -26,6 +30,10 @@ class ComposerStaticInit9b67b77d22cdc5a2c2b4491fe4453deb
         array (
             0 => __DIR__ . '/../..' . '/observer',
         ),
+        'di_ioc\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/di_ioc',
+        ),
         'Symfony\\Component\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
@@ -37,8 +45,11 @@ class ComposerStaticInit9b67b77d22cdc5a2c2b4491fe4453deb
     );
 
     public static $classMap = array (
+        'Facade\\D7' => __DIR__ . '/../..' . '/facade/D7.php',
         'Facade\\Facade' => __DIR__ . '/../..' . '/facade/Facade.php',
+        'Facade\\Kd35' => __DIR__ . '/../..' . '/facade/Kd35.php',
         'Facade\\Player' => __DIR__ . '/../..' . '/facade/Player.php',
+        'Facade\\R9' => __DIR__ . '/../..' . '/facade/R9.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
@@ -395,6 +406,11 @@ class ComposerStaticInit9b67b77d22cdc5a2c2b4491fe4453deb
         'Symfony\\Component\\Yaml\\Unescaper' => __DIR__ . '/..' . '/symfony/yaml/Unescaper.php',
         'Symfony\\Component\\Yaml\\Yaml' => __DIR__ . '/..' . '/symfony/yaml/Yaml.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        'di_ioc\\Bim' => __DIR__ . '/../..' . '/di_ioc/Bim.php',
+        'di_ioc\\Boo' => __DIR__ . '/../..' . '/di_ioc/Boo.php',
+        'di_ioc\\Container' => __DIR__ . '/../..' . '/di_ioc/Container.php',
+        'di_ioc\\Di' => __DIR__ . '/../..' . '/di_ioc/Di.php',
+        'di_ioc\\Foo' => __DIR__ . '/../..' . '/di_ioc/Foo.php',
         'observer\\Concreteobserver' => __DIR__ . '/../..' . '/observer/Concreteobserver.php',
         'observer\\Concretesubject' => __DIR__ . '/../..' . '/observer/Concretesubject.php',
         'observer\\Iobserver' => __DIR__ . '/../..' . '/observer/Iobserver.php',

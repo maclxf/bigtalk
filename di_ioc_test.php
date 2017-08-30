@@ -1,16 +1,12 @@
 <?php
-require_once('./di_ioc/Container.php');
-require_once('./di_ioc/Component.php');
-require_once('./di_ioc/Foo.php');
-require_once('./di_ioc/Boo.php');
-require_once('./di_ioc/Bim.php');
+// 必须引入的包含
+require_once __DIR__ . '/vendor/autoload.php';
 
-/*use di_ioc\Container;
-use di_ioc\Component;
+use di_ioc\Container;
 
 use di_ioc\Foo;
 use di_ioc\Boo;
-use di_ioc\Bim;*/
+use di_ioc\Bim;
 
 $co = new Container();
 $co->bim = function() {
