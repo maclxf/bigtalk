@@ -1,10 +1,15 @@
 <?php
-
+//namespace di_ioc;
 
 class Boo {
 
-    public function do_anything(Bim $bim) {
-        $bim->do_anything();
-        echo __MATHED__ . 'is doing ...<br>';
+    private $bim;
+    public function __construct(Bim $bim) {
+        $this->bim = $bim;
+    }
+
+    public function do_anything() {
+        $this->bim->do_anything();
+        echo __CLASS__ . ' is doing ...<br>';
     }
 }

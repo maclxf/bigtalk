@@ -1,9 +1,9 @@
 <?php
-
+//namespace di_ioc;
 
 class Bim {
 
     public function do_anything() {
-        echo __MATHED__ . 'is doing ...<br>';
+        echo __CLASS__ . ' is doing ...<br>';
     }
 }
