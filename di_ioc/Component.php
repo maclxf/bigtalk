@@ -1,5 +1,5 @@
 <?php
-//namespace di_ioc;
+namespace di_ioc;
 
 class Component {
 
@@ -11,15 +11,18 @@ class Component {
 
     public function task() {
         // new in
-        $this->di->get();
+        $some_one = $this->di->get('a');
+        $some_one->match();
     }
 
     public function other_task() {
         // same in
-        $this->di->get_share();
+        $this->di->get_share_a();
+        $some_one->match();
 
+        $this->di->get('a');
         // new in
-        $this->di->get();
+        $this->di->get('b');
     }
 }
 

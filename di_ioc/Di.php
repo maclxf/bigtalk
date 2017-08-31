@@ -1,25 +1,30 @@
 <?php
 namespace di_ioc;
 /**
- *注入类
- *暂时未用
+ *容器
  */
 class Di {
 
-    public function __construct() {
+    private $_register = [];
 
+    public function create_a () {
+        return new a();
     }
 
-    public function set() {
-
+    public function set($key, $value) {
+        $this->_register[$key] = $value;
     }
 
     public function get() {
-
+        return isset($this->_register[$key]) ? $this->_register[$key] : NULL;
     }
 
-    public function get_share() {
-
+    public function get_share_a() {
+        if (!isset($this->_register['a'])) {
+            return $this->create_a();
+        } else {
+            return $this->_register['a'];
+        }
     }
 
 
