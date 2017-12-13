@@ -16,13 +16,16 @@ class Component {
     }
 
     public function other_task() {
-        // same in
-        $this->di->get_share_a();
+        $some_one =$this->di->get('a');
         $some_one->match();
+        // same in
+        $some_one_old = $this->di->get_share_a();
+        $some_one_old->match();
 
-        $this->di->get('a');
+
         // new in
-        $this->di->get('b');
+        $some_one_b = $this->di->get('b');
+        $some_one_b->match();
     }
 }
 

@@ -2,6 +2,5 @@
 namespace di_ioc;
 
 interface TT {
-
-    abstract public function match();
+    public function match();
 }

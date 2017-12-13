@@ -23,3 +23,29 @@ $co->foo = function($co) {
 
 $foo = $co->foo;
 $foo->do_anything();
+
+echo '<hr>';
+
+
+use di_ioc\Component;
+use di_ioc\DI;
+
+use di_ioc\A;
+use di_ioc\B;
+
+
+
+$di = new Di();
+
+$di->set('a', function (){
+    return new A();
+});
+
+$di->set('b', function (){
+    return new B();
+});
+
+$com = new Component($di);
+
+$com->task();
+$com->other_task();
