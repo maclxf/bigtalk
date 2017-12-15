@@ -19,9 +19,11 @@ class UserController
 {
     public function login($username = '', $password = '')
     {
+        what();
         try {
-            $model = new UserModel();
-            $res   = $model->login($username, $password);
+
+            //$model = new UserModel();
+            //$res   = $model->login($username, $password);
             // 如果需要的话，我们可以在这里统一commit数据库事务
             // $db->commit();
         } catch (Exception $e) {
