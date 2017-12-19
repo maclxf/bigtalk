@@ -33,6 +33,9 @@ class Container
             return $this->instances[$abstract];
         }
 
+        /**
+         * $parameters = array('love');
+         */
         array_unshift($parameters, $this);
 
         return call_user_func_array($this->binds[$abstract], $parameters);
