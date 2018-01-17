@@ -27,11 +27,17 @@ $container->bind('xpower', function($container) {
 $container->bind('ultrabomb', function($container) {
     return new UltraBomb;
 });
+
+$love = new Love();
+$container->bind('love', $love);
+
 // ****************** 华丽丽的分割线 **********************
+echo '<pre>';
 // 开始启动生产
 $superman_1 = $container->make('superman', array('xpower'));
 $superman_2 = $container->make('superman', array('ultrabomb'));
-$superman_3 = $container->make('superman', array('xpower'));
+$superman_3 = $container->make('superman', array('love'));
+
 
 $superman_1->fight();
 $superman_2->fight();

@@ -20,7 +20,7 @@ class XPower implements SuperModuleInterface
 {
     public function activate(array $target = array())
     {
-        echo 'I am power!';
+        echo 'I am power!<br>';
     }
 }
 
@@ -31,7 +31,18 @@ class UltraBomb implements SuperModuleInterface
 {
     public function activate(array $target = array())
     {
-        echo 'I am bomb!';
+        echo 'I am bomb!<br>';
+    }
+}
+
+/**
+ * 终极炸弹 （就这么俗）
+ */
+class Love implements SuperModuleInterface
+{
+    public function activate(array $target = array())
+    {
+        echo 'I love Lane!<br>';
     }
 }
 
@@ -51,6 +62,7 @@ class Superman
 
     public function __construct(SuperModuleInterface $module)
     {
+        var_dump($module);
         $this->module = $module;
     }
 
