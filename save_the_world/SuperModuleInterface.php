@@ -35,7 +35,15 @@ class UltraBomb implements SuperModuleInterface
     }
 }
 
+class Love implements SuperModuleInterface
+{
+    public function activate(array $target = array())
+    {
+        echo 'I love jane';
+    }
+}
 
+/**************************************超能力的类 end***************************************************************/
 
 class Superman
 {

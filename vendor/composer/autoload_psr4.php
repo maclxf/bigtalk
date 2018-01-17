@@ -9,5 +9,7 @@ return array(
     'observer\\' => array($baseDir . '/observer'),
     'di_ioc\\' => array($baseDir . '/di_ioc'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
+    'SoftProxy\\' => array($baseDir . '/SoftProxy'),
+    'HardP\\' => array($baseDir . '/HardProxy'),
     'Facade\\' => array($baseDir . '/facade'),
 );

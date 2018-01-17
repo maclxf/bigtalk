@@ -5,11 +5,16 @@ class Container
 
     protected $instances;
 
+    public function show() {
+        echo '<pre>';
+        //var_dump($this->binds);
+        //var_dump($this->instances);
+    }
     /**
      * 注册超能力
      * @author lxf 2017-12-14
-     * @param  [type] $abstract 注册超能力的名称
-     * @param  [type] $concrete [description]
+     * @param  [type] $abstract 超能力的名称
+     * @param  [type] $concrete 超能力的匿名函数
      * @return [type]           [description]
      */
     public function bind($abstract, $concrete)
@@ -21,7 +26,13 @@ class Container
         }
     }
 
-
+    /**
+     * 生产超能力类
+     * @author lxf 2017-12-17
+     * @param  [type] $abstract   [description]
+     * @param  array  $parameters [description]
+     * @return [type]             [description]
+     */
     public function make($abstract, $parameters = [])
     {
         if (isset($this->instances[$abstract])) {
@@ -29,6 +40,7 @@ class Container
         }
 
         array_unshift($parameters, $this);
+        var_dump($parameters);
 
         return call_user_func_array($this->binds[$abstract], $parameters);
     }
