@@ -18,6 +18,11 @@ class ComposerStaticInit9b67b77d22cdc5a2c2b4491fe4453deb
         'S' => 
         array (
             'Symfony\\Component\\Yaml\\' => 23,
+            'SoftProxy\\' => 10,
+        ),
+        'H' => 
+        array (
+            'HardP\\' => 6,
         ),
         'F' => 
         array (
@@ -38,6 +43,14 @@ class ComposerStaticInit9b67b77d22cdc5a2c2b4491fe4453deb
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
+        'SoftProxy\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/SoftProxy',
+        ),
+        'HardP\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/HardProxy',
+        ),
         'Facade\\' => 
         array (
             0 => __DIR__ . '/../..' . '/facade',
@@ -53,6 +66,9 @@ class ComposerStaticInit9b67b77d22cdc5a2c2b4491fe4453deb
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
+        'HardP\\Gamer' => __DIR__ . '/../..' . '/HardProxy/Gamer.php',
+        'HardP\\IHardGamer' => __DIR__ . '/../..' . '/HardProxy/IHardGamer.php',
+        'HardP\\ProxyGamer' => __DIR__ . '/../..' . '/HardProxy/ProxyGamer.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/PHPUnit/Extensions/GroupTestSuite.php',
         'PHPUnit_Extensions_PhptTestCase' => __DIR__ . '/..' . '/phpunit/phpunit/PHPUnit/Extensions/PhptTestCase.php',
         'PHPUnit_Extensions_PhptTestCase_Logger' => __DIR__ . '/..' . '/phpunit/phpunit/PHPUnit/Extensions/PhptTestCase/Logger.php',
@@ -395,6 +411,9 @@ class ComposerStaticInit9b67b77d22cdc5a2c2b4491fe4453deb
         'PHP_Token_WHITESPACE' => __DIR__ . '/..' . '/phpunit/php-token-stream/PHP/Token.php',
         'PHP_Token_XOR_EQUAL' => __DIR__ . '/..' . '/phpunit/php-token-stream/PHP/Token.php',
         'PHP_Token_YIELD' => __DIR__ . '/..' . '/phpunit/php-token-stream/PHP/Token.php',
+        'SoftProxy\\Gamer' => __DIR__ . '/../..' . '/SoftProxy/Gamer.php',
+        'SoftProxy\\ISoftGamer' => __DIR__ . '/../..' . '/SoftProxy/ISoftGamer.php',
+        'SoftProxy\\ProxyGamer' => __DIR__ . '/../..' . '/SoftProxy/ProxyGamer.php',
         'Symfony\\Component\\Yaml\\Dumper' => __DIR__ . '/..' . '/symfony/yaml/Dumper.php',
         'Symfony\\Component\\Yaml\\Escaper' => __DIR__ . '/..' . '/symfony/yaml/Escaper.php',
         'Symfony\\Component\\Yaml\\Exception\\DumpException' => __DIR__ . '/..' . '/symfony/yaml/Exception/DumpException.php',

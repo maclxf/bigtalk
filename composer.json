@@ -18,7 +18,9 @@
         "psr-4":{
             "observer\\":["observer/"],
             "Facade\\":["facade/"],
-            "di_ioc\\":["di_ioc/"]
+            "di_ioc\\":["di_ioc/"],
+            "SoftProxy\\":["SoftProxy/"],
+            "HardP\\":["HardProxy/"]
         }
     }
 }
