@@ -22,36 +22,5 @@ ci_ide_helper.php
 # 程序日志
 log/*
 
-haioo/*
-
-# 项目缓存
-application/cache/*
-
-application/logs/*
-
-# Test.php
-application/controllers/Test.php
-
-# 用户上传的文件
-application/views/images/ht_deals/*
-application/views/images/input_packages/*
-application/views/images/pending_packages/*
-application/views/images/recomm_products/*
-application/views/images/product/*
-application/views/images/products/*
-application/views/images/show_order/*
-application/views/images/tickets/*
-application/views/images/tutorial/*
-application/views/uploads/*
-
-# js
-application/views/js/res/*
-application/views/js/base.js
-
-# 后台用户上传的文件
-application/views/admin/tmp/*
-application/views/admin/uploads/*
-
-# 用户权限
-application/views/admin/user/__privilege/*
+vendor/*
 

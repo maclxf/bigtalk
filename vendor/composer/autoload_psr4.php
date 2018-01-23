@@ -9,8 +9,11 @@ return array(
     'prototype\\' => array($baseDir . '/Prototype'),
     'observer\\' => array($baseDir . '/observer'),
     'di_ioc\\' => array($baseDir . '/di_ioc'),
-    'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
     'SoftProxy\\' => array($baseDir . '/SoftProxy'),
+    'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'HardP\\' => array($baseDir . '/HardProxy'),
+    'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
+    'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
+    'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
     'Facade\\' => array($baseDir . '/facade'),
 );
