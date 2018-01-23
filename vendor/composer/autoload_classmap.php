@@ -386,4 +386,6 @@ return array(
     'observer\\Concretesubject' => $baseDir . '/observer/Concretesubject.php',
     'observer\\Iobserver' => $baseDir . '/observer/Iobserver.php',
     'observer\\Subject' => $baseDir . '/observer/Subject.php',
+    'prototype\\ConcretePrototype' => $baseDir . '/Prototype/ConcretePrototype.php',
+    'prototype\\IPrototype' => $baseDir . '/Prototype/IPrototype.php',
 );

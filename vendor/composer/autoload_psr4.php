@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'prototype\\' => array($baseDir . '/Prototype'),
     'observer\\' => array($baseDir . '/observer'),
     'di_ioc\\' => array($baseDir . '/di_ioc'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),

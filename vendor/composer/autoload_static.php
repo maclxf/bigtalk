@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit9b67b77d22cdc5a2c2b4491fe4453deb
 {
     public static $prefixLengthsPsr4 = array (
+        'p' => 
+        array (
+            'prototype\\' => 10,
+        ),
         'o' => 
         array (
             'observer\\' => 9,
@@ -31,6 +35,10 @@ class ComposerStaticInit9b67b77d22cdc5a2c2b4491fe4453deb
     );
 
     public static $prefixDirsPsr4 = array (
+        'prototype\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Prototype',
+        ),
         'observer\\' => 
         array (
             0 => __DIR__ . '/../..' . '/observer',
@@ -438,6 +446,8 @@ class ComposerStaticInit9b67b77d22cdc5a2c2b4491fe4453deb
         'observer\\Concretesubject' => __DIR__ . '/../..' . '/observer/Concretesubject.php',
         'observer\\Iobserver' => __DIR__ . '/../..' . '/observer/Iobserver.php',
         'observer\\Subject' => __DIR__ . '/../..' . '/observer/Subject.php',
+        'prototype\\ConcretePrototype' => __DIR__ . '/../..' . '/Prototype/ConcretePrototype.php',
+        'prototype\\IPrototype' => __DIR__ . '/../..' . '/Prototype/IPrototype.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

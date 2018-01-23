@@ -20,7 +20,8 @@
             "Facade\\":["facade/"],
             "di_ioc\\":["di_ioc/"],
             "SoftProxy\\":["SoftProxy/"],
-            "HardP\\":["HardProxy/"]
+            "HardP\\":["HardProxy/"],
+            "prototype\\":["Prototype"]
         }
     }
 }
