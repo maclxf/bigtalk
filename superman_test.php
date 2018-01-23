@@ -7,6 +7,9 @@ $container = new Container;
 
 // 向该 超级工厂添加超人的生产脚本
 $container->bind('superman', function($container, $moduleName) {
+    var_dump($container);
+    var_dump($moduleName);
+
     return new Superman($container->make($moduleName));
 });
 

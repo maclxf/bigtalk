@@ -34,7 +34,7 @@ class Container
         }
 
         /**
-         * $parameters = array('love');
+         * $parameters = array($container, 'love');
          */
         array_unshift($parameters, $this);
 
