@@ -22,7 +22,7 @@ class OpenningStatus extends LiftStatus {
      */
     public function close() {
         // 设置为关闭状态
-        $this->context->setLiftStatus(Context::ClosingStatus);
+        $this->context->setLiftStatus(Context::$ClosingStatus);
         // 获取到新的设置了状态的类
         $context = $this->context->getLiftStatus();
         // 在执行关闭状态的方法

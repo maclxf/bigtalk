@@ -4,7 +4,7 @@ use liftstatustest\Context;
 
 abstract class LiftStatus {
     // 环境角色
-    protected $context = new Context();
+    protected $context;
 
     public function setContext(Context $context) {
         $this->context = $context;

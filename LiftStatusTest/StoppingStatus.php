@@ -11,7 +11,7 @@ class StoppingStatus extends LiftStatus {
      * @return [type] [description]
      */
     public function open() {
-        $this->context->setLiftStatus(Context::OpenningStatus);
+        $this->context->setLiftStatus(Context::$OpenningStatus);
         $context = $this->context->getLiftStatus();
         $context->open();
     }

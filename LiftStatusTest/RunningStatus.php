@@ -36,7 +36,7 @@ class RunningStatus extends LiftStatus {
      * @return [type] [description]
      */
     public function stop() {
-        $this->context->setLiftStatus(Context::StoppingStatus);
+        $this->context->setLiftStatus(Context::$StoppingStatus);
         $context = $this->context->getLiftStatus();
         $context->stop();
     }

@@ -11,7 +11,7 @@ class ClosingStatus extends LiftStatus {
      * @return [type] [description]
      */
     public function open() {
-        $this->context->setLiftStatus(Context::OpenningStatus);
+        $this->context->setLiftStatus(Context::$OpenningStatus);
         $context = $this->context->getLiftStatus();
         $context->open();
     }
@@ -31,7 +31,7 @@ class ClosingStatus extends LiftStatus {
      * @return [type] [description]
      */
     public function run() {
-        $this->context->setLiftStatus(Context::RunningStatus);
+        $this->context->setLiftStatus(Context::$RunningStatus);
         $context = $this->context->getLiftStatus();
         $context->run();
     }
@@ -41,7 +41,7 @@ class ClosingStatus extends LiftStatus {
      * @return [type] [description]
      */
     public function stop() {
-        $this->context->setLiftStatus(Context::StoppingStatus);
+        $this->context->setLiftStatus(Context::$StoppingStatus);
         $context = $this->context->getLiftStatus();
         $context->stop();
     }
