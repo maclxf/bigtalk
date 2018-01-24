@@ -20,7 +20,9 @@
             "di_ioc\\":["di_ioc/"],
             "SoftProxy\\":["SoftProxy/"],
             "HardP\\":["HardProxy/"],
-            "prototype\\":["Prototype"]
+            "prototype\\":["Prototype/"],
+            "statuspattern\\":["Status/"],
+            "liftstatustest\\":["LiftStatusTest/"]
         }
     }
 }

@@ -1,7 +1,8 @@
 <?php
-require_once('status/Status.php');
-require_once('status/StatusPass.php');
-require_once('status/StatusNotPass.php');
+namespace statuspattern;
+use statuspattern\Status;
+use statuspattern\StatusPass;
+use statuspattern\StatusNotPass;
 
 class StatusWaitFinance implements Status {
     protected $deal_status;
@@ -23,5 +24,4 @@ class StatusWaitFinance implements Status {
             $not_pass_context->do_request($new_status);
         }
     }
-
 }

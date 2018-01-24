@@ -1,6 +1,7 @@
 <?php
-require_once('status/Context.php');
-
+require_once __DIR__ . '/vendor/autoload.php';
+use statuspattern\Context;
+use statuspattern\StatusWaitSupervisor;
 /*
 返还到
 'refund_to' => 1,余额 2，支付宝

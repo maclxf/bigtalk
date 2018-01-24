@@ -1,7 +1,8 @@
 <?php
-require_once('status/Status.php');
-require_once('status/StatusWaitFinance.php');
-require_once('status/StatusNotPass.php');
+namespace statuspattern;
+use statuspattern\Status;
+use statuspattern\StatusWaitFinance;
+use statuspattern\StatusNotPass;
 
 
 class StatusWaitSupervisor implements Status {

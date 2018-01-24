@@ -1,6 +1,5 @@
 <?php
-require_once('status/StatusWaitSupervisor.php');
-
+namespace statuspattern;
 
 class Context {
     private $status;

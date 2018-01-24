@@ -1,5 +1,6 @@
 <?php
-require_once('status/Status.php');
+namespace statuspattern;
+use statuspattern\Status;
 
 class StatusNotPass implements Status {
     protected $deal_status;
