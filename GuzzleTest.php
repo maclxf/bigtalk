@@ -16,7 +16,6 @@ $arr = [
 
 ];
 
-$res = $client->request('GET', 'http://adi-fr.dev/api', $arr);
-
-echo '<pre>';
-var_dump($res);
+$response = $client->request('GET', 'http://adi-fr.dev/api', $arr);
+$body = $response->getBody();
+echo $body->getContents();
