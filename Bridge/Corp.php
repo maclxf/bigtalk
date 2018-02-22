@@ -8,8 +8,5 @@ abstract class Corp {
         $this->product = $product;
     }
 
-    abstract public function makeMoney() {
-        $this->product->beProduct();
-        $this->product->sellProduct();
-    }
+    abstract public function makeMoney();
 }

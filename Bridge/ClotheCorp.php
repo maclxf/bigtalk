@@ -1,9 +1,8 @@
 <?php
 namespace Bridge;
-
 use Bridge\Corp;
 
-class ClotheCorp {
+class ClotheCorp extends Corp {
     private $product;
 
     public function __construct(Product $product) {

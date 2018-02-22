@@ -22,7 +22,9 @@
             "HardP\\":["HardProxy/"],
             "prototype\\":["Prototype/"],
             "statuspattern\\":["Status/"],
-            "liftstatustest\\":["LiftStatusTest/"]
+            "liftstatustest\\":["LiftStatusTest/"],
+            "Bridge\\":["Bridge"],
+            "command\\":["Command/"]
         }
     }
 }
