@@ -27,7 +27,11 @@ class Context {
     }
 
     public function setLiftStatus(LiftStatus $liftstatus) {
+        // 让context上下文类持有该状态
         $this->liftstatus = $liftstatus;
+
+        // 切换context上下文类为当前所持有的状态
+        // 这样context才能操作所持有的状态执行具体方法
         $this->liftstatus->setContext($this);
     }
 
