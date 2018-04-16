@@ -11,11 +11,12 @@ $guest = new Role('guest');
 $acl->addRole($guest);
 $resource = new Resource('blog');
 
+if (!$acl->hasResource($resource)) {
+    $acl->addResource($resource);
+}
+
 // 使用 allow 方法赋权
 $acl->allow($guest, $resource, 'view');
-if ($acl->hasResource($resource)) {
-    var_dump($acl->isAllowed('guest', 'blog', 'read'));
-}
 exit;
 
 /*$redis = new Redis();
