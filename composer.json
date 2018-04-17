@@ -9,7 +9,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "guzzlehttp/guzzle": "^6.2@dev"
+        "guzzlehttp/guzzle": "^6.2@dev",
+        "zendframework/zend-permissions-acl": "2.6"
     },
     "require-dev": {
     },
