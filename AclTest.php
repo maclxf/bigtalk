@@ -19,6 +19,7 @@ if (!$acl->hasResource($resource)) {
 // 给guest赋与blog的view的权限
 // 当blog是null时表示对所有资源都有view的权限
 echo '<pre>';
+// 允许guest这个角色有resource,read的权限
 $acl->allow($guest, $resource, 'read');
 echo 'guest can read';
 var_dump($acl->isAllowed($guest, $resource, 'read'));
