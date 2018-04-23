@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7c87ed21ae6462196887435b00845e3",
+    "content-hash": "1196fba799e7367dc6b588a35ae3cd62",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "73bf0937061461ca45292a93aa3b7e9010f2e753"
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/guzzle/guzzle/73bf0937061461ca45292a93aa3b7e9010f2e753.zip",
-                "reference": "73bf0937061461ca45292a93aa3b7e9010f2e753",
+                "url": "https://files.phpcomposer.com/files/guzzle/guzzle/407b0cb880ace85c9b63c5f9551db498cb2d50ba.zip",
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
                 "shasum": ""
             },
             "require": {
@@ -69,7 +69,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-04-09T20:04:58+00:00"
+            "time": "2018-04-22T15:46:56+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "6858c3f0e94b96c114c28f9185f295bf30a53e58"
+                "reference": "da9aa31add41b20bf77011b0314b95fac3a06f86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/guzzle/psr7/6858c3f0e94b96c114c28f9185f295bf30a53e58.zip",
-                "reference": "6858c3f0e94b96c114c28f9185f295bf30a53e58",
+                "url": "https://files.phpcomposer.com/files/guzzle/psr7/da9aa31add41b20bf77011b0314b95fac3a06f86.zip",
+                "reference": "da9aa31add41b20bf77011b0314b95fac3a06f86",
                 "shasum": ""
             },
             "require": {
@@ -185,7 +185,53 @@
                 "uri",
                 "url"
             ],
-            "time": "2018-04-11T19:14:35+00:00"
+            "time": "2018-04-22T16:11:15+00:00"
+        },
+        {
+            "name": "owner888/phpspider",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/owner888/phpspider.git",
+                "reference": "9888a75d058cf5765763fa68f432807f775df252"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/owner888/phpspider/9888a75d058cf5765763fa68f432807f775df252.zip",
+                "reference": "9888a75d058cf5765763fa68f432807f775df252",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "suggest": {
+                "ext-pcntl、ext-redis": "For better performance. "
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phpspider\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Seatle Yang",
+                    "email": "seatle@foxmail.com",
+                    "homepage": "http://www.phpspider.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The PHPSpider Framework.",
+            "homepage": "http://www.phpspider.org",
+            "keywords": [
+                "framework",
+                "phpspider"
+            ],
+            "time": "2018-03-12T07:42:17+00:00"
         },
         {
             "name": "psr/http-message",
@@ -291,7 +337,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "guzzlehttp/guzzle": 20
+        "guzzlehttp/guzzle": 20,
+        "owner888/phpspider": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

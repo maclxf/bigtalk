@@ -10,7 +10,8 @@
     "minimum-stability": "dev",
     "require": {
         "guzzlehttp/guzzle": "^6.2@dev",
-        "zendframework/zend-permissions-acl": "2.6"
+        "zendframework/zend-permissions-acl": "2.6",
+        "owner888/phpspider": "dev-master"
     },
     "require-dev": {
     },
