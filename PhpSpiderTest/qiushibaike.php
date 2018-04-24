@@ -34,16 +34,16 @@ $configs = array(
     //'proxies' => array(
         //'http://H784U84R444YABQD:57A8B0B743F9B4D2@proxy.abuyun.com:9010'
     //),
-    /*'export' => array(
+    'export' => array(
         'type' => 'csv',
-        'file' => '../data/qiushibaike.csv',
-    ),*/
+        'file' => './PhpSpiderTest/data/qiushibaike.csv',
+    ),
     //'export' => array(
         //'type'  => 'sql',
         //'file'  => '../data/qiushibaike.sql',
         //'table' => 'content',
     //),
-    'export' => array(
+    /*'export' => array(
         'type' => 'db',
         'table' => 'qiushibaike_content',
     ),
@@ -53,7 +53,7 @@ $configs = array(
         'user'  => 'root',
         'pass'  => '111111',
         'name'  => 'phpspider_test',
-    ),
+    ),*/
     //'queue_config' => array(
         //'host'      => '127.0.0.1',
         //'port'      => 6379,
@@ -70,6 +70,7 @@ $configs = array(
         ),
         array(
             'name' => "article_author",
+            //<div class="author clearfix">
             'selector' => "//div[contains(@class,'author')]//h2",
             'required' => true,
         ),

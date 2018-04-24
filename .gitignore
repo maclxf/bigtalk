@@ -22,5 +22,9 @@ ci_ide_helper.php
 # 程序日志
 log/*
 
+# composer库文件
 vendor/*
+
+## 爬虫生成的文件
+PhpSpiderTest/data/*
 
