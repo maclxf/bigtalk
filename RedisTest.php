@@ -3,8 +3,11 @@ $redis = new Redis();
 $redis->connect('127.0.0.1', 6379);
 /*
 string（字符串） 普通键值对存储，一个键对应一个值。
+
 list（列表）     列表的功能十分独特，他可以在一个键下面存储N个可以重复的元素。其实就是把string类型右边的值换成了多个元素组成的列表。
+
 set（集合）      set集合和list列表十分的相似，都可以存储多个字符串。但是list列表可以存储重复值，而set集合中不可重复。
+
 hash（散列）     一个散列可以包含多个键值对
                 散列的每个键都不能重复，各不相同，无序排列
                 其值可以是字符串或数字值
@@ -49,7 +52,7 @@ var_dump($redis->rpush("list-key","item3")); // 含有3个元素，返回int 3
 // 返回列表 key 中指定区间内的元素，区间以偏移量 start 和 stop 指定。
 var_dump($redis->lrange("list-key", 0 , -1));
 
-// lindex获取索引为0的值，也就是第二个："item"
+// lindex获取索引为0的值，也就是第一个："item"
 $li = $redis->lindex("list-key", 0);
 var_dump($li);
 
