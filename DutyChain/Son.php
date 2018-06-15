@@ -15,3 +15,11 @@ class Son extends Handler {
 		echo '---儿子的答案是：同意---<br>';
 	}
 }
+
+
+渠道
+	等待获取
+	获取中
+	已获取
+
+	获取失败
