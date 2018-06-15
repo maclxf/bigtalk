@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "4d4ca7f0121282f73b2f51b2e286ca41",
     "content-hash": "1196fba799e7367dc6b588a35ae3cd62",
     "packages": [
         {
@@ -12,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
+                "reference": "da6a7201d8a0b529e09cf2ab7b9b998908883af8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/guzzle/guzzle/407b0cb880ace85c9b63c5f9551db498cb2d50ba.zip",
-                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "url": "https://files.phpcomposer.com/files/guzzle/guzzle/da6a7201d8a0b529e09cf2ab7b9b998908883af8.zip",
+                "reference": "da6a7201d8a0b529e09cf2ab7b9b998908883af8",
                 "shasum": ""
             },
             "require": {
@@ -69,7 +70,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-04-22T15:46:56+00:00"
+            "time": "2018-04-23 11:06:26"
         },
         {
             "name": "guzzlehttp/promises",
@@ -120,7 +121,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2018-03-25T01:26:01+00:00"
+            "time": "2018-03-25 01:26:01"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -185,7 +186,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2018-04-22T16:11:15+00:00"
+            "time": "2018-04-22 16:11:15"
         },
         {
             "name": "owner888/phpspider",
@@ -231,7 +232,7 @@
                 "framework",
                 "phpspider"
             ],
-            "time": "2018-03-12T07:42:17+00:00"
+            "time": "2018-03-12 07:42:17"
         },
         {
             "name": "psr/http-message",
@@ -281,7 +282,7 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06T14:39:51+00:00"
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "zendframework/zend-permissions-acl",
@@ -330,7 +331,7 @@
                 "acl",
                 "zf2"
             ],
-            "time": "2016-02-03T21:46:45+00:00"
+            "time": "2016-02-03 21:46:45"
         }
     ],
     "packages-dev": [],
