@@ -1,6 +1,6 @@
 <?php
 namespace Handler;
-use Handler\handler
+use Handler\handler;
 
 class Father extends Handler {
 	public function __construct() {

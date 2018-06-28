@@ -2,9 +2,9 @@
 namespace Handler;
 
 abstract class Handler {
-	final public static FATHER_LEVEL_REQ = 1;
-	final public static HUSBAND_LEVEL_REQ = 2;
-	final public static SON_LEVEL_REQ = 3;
+	const FATHER_LEVEL_REQ = 1;
+	const HUSBAND_LEVEL_REQ = 2;
+	const SON_LEVEL_REQ = 3;
 
 	private $level;
 
