@@ -21,9 +21,9 @@ ee473c19e05f7835110126fee4eaefa4*/
 
 $post_data = array(
     'access_key_id' => $access_key_id,
-    'timestamp'     => 1529978380,
+    'timestamp'     => $time,
     'params'        => [
-        'nu' => 'BT1525256727',//BT1525256727,BT1525458956,BT1525298158,BT1525187340,BT1525307542
+        'nu' => 'BT1524647843',//BT1525256727,BT1525458956,BT1525298158,BT1525187340,BT1525307542
         'order' => 'asc'
     ]
 );
