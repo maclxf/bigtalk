@@ -1,5 +1,10 @@
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
+require_once 'Toolise/QrCodeGenerater.php';
+
+
+$qr = new QrCodeGenerater(['codeStr' => 'http://origin.ccic.com/wap/index.aspx?key=000000204203626', 'codeSize' => 100]);
+echo $qr->show();
+/*require_once __DIR__ . '/vendor/autoload.php';
 
 use Endroid\QrCode\ErrorCorrectionLevel;
 use Endroid\QrCode\LabelAlignment;
@@ -35,10 +40,11 @@ $qrCode->setValidateResult(false);
 
 // Directly output the QR code
 header('Content-Type: '.$qrCode->getContentType());
-echo $qrCode->writeString();
+echo $qrCode->writeString();*/
 
 // Save it to a file
 //$qrCode->writeFile(__DIR__.'/qrcode.png');
 
 // Create a response object
 //$response = new QrCodeResponse($qrCode);
+
