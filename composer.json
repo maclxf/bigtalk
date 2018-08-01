@@ -8,7 +8,8 @@
         }
     ],
     "require": {
-        "zendframework/zend-permissions-acl": "2.6"
+        "zendframework/zend-permissions-acl": "2.6",
+        "guzzlehttp/guzzle": "^6.3"
     },
     "autoload": {
         "psr-4":{
