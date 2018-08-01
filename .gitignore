@@ -24,7 +24,6 @@ log/*
 
 # composer库文件
 vendor/*
-composer.lock
 
 ## 爬虫生成的文件
 PhpSpiderTest/data/*

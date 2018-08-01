@@ -3,7 +3,18 @@ require_once 'Toolise/QrCodeGenerater.php';
 
 
 $qr = new QrCodeGenerater(['codeStr' => 'http://origin.ccic.com/wap/index.aspx?key=000000204203626', 'codeSize' => 100]);
+//$qr->setLevel('M');
+//
+$a = [
+	'level' => 'H',
+	'title' => '社会主义好',
+	'logoPath' => './toolise/Images/Logo/maclxf.jpg'
+];
+$qr->setParames($a);
+
 echo $qr->show();
+
+
 /*require_once __DIR__ . '/vendor/autoload.php';
 
 use Endroid\QrCode\ErrorCorrectionLevel;

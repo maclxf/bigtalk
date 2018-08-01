@@ -13,7 +13,6 @@
         "zendframework/zend-permissions-acl": "2.6",
         "owner888/phpspider": "dev-master",
         "phpunit/phpunit": "^7.3@dev",
-        "endroid/qr-code": "^3.0@dev"
     },
     "require-dev": {
     },
