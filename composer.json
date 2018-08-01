@@ -8,10 +8,7 @@
         }
     ],
     "require": {
-        "zendframework/zend-permissions-acl": "2.6",
-        "owner888/phpspider": "dev-master",
-    },
-    "require-dev": {
+        "zendframework/zend-permissions-acl": "2.6"
     },
     "autoload": {
         "psr-4":{
