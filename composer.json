@@ -26,7 +26,9 @@
             "liftstatustest\\":["LiftStatusTest/"],
             "Bridge\\":["Bridge"],
             "command\\":["Command/"],
-            "Handler\\":["DutyChain/"]
+            "Handler\\":["DutyChain/"],
+            "DressV2\\":["DressV2/"],
+            "AbstractFactory\\":["AbstractFactory/"]
         }
     }
 }
