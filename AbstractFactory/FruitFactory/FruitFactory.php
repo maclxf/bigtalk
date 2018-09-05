@@ -1,5 +1,5 @@
 <?php
-namespace AbstractFctory\FruitFactory;
+namespace AbstractFruitFactory;
 // 产品结构
 abstract class FruitFactory {
     abstract public function getApple();

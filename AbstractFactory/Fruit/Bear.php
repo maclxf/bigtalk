@@ -1,5 +1,5 @@
 <?php
-namespace AbstractFactory\Fruit;
+namespace AbstractFruit;
 
 // 产品结构
 abstract class Bear implements Fruit {

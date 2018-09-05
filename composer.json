@@ -28,7 +28,8 @@
             "command\\":["Command/"],
             "Handler\\":["DutyChain/"],
             "DressV2\\":["DressV2/"],
-            "AbstractFactory\\":["AbstractFactory/"]
+            "AbstractFruitFactory\\":["AbstractFactory/FruitFactory/"],
+            "AbstractFruit\\":["AbstractFactory/Fruit/"]
         }
     }
 }

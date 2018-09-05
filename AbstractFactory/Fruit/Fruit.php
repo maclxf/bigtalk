@@ -1,7 +1,7 @@
 <?php
-namespace AbstractFactory\Fruit;
+namespace AbstractFruit;
 
 // 产品结构
-interface class Fruit {
+interface Fruit {
     public function getFruit();
 }

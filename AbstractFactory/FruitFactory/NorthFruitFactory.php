@@ -1,13 +1,12 @@
 <?php
-namespace AbstractFactory\FruitFactory;
+namespace AbstractFruitFactory;
 
+use AbstractFruit\NorthApple;
+use AbstractFruit\NorthBear;
 
-use AbstractFactory\FruitFactory AS aff;
-use AbstractFactory\Fruit\NorthApple;
-use AbstractFactory\Fruit\NorthBear;
 
 // 产品结构
-class NorthFruitFactory extends aff\FruitFactory {
+class NorthFruitFactory extends FruitFactory {
     public function getApple() {
         return new NorthApple();
     }
