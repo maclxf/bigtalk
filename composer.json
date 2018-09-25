@@ -29,7 +29,8 @@
             "Handler\\":["DutyChain/"],
             "DressV2\\":["DressV2/"],
             "AbstractFruitFactory\\":["AbstractFactory/FruitFactory/"],
-            "AbstractFruit\\":["AbstractFactory/Fruit/"]
+            "AbstractFruit\\":["AbstractFactory/Fruit/"],
+            "SimpleIntense\\" : ["SimpleIns/"]
         }
     }
 }
