@@ -30,6 +30,7 @@
             "DressV2\\":["DressV2/"],
             "AbstractFruitFactory\\":["AbstractFactory/FruitFactory/"],
             "AbstractFruit\\":["AbstractFactory/Fruit/"],
+            "SimpleIntense\\" : ["SimpleIns/"],
             "Component\\":["Component/"],
             "TIterator\\":["TIterator/"]
         }
