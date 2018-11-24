@@ -5,7 +5,6 @@ use NameSpaceDemo\Demo; //若支注释掉这个不注释掉demo.php中的namespa
 
 
 $demo = new Demo();
-//$demo->show_me();
 
 
 
