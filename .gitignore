@@ -25,6 +25,10 @@ log/*
 # composer库文件
 vendor/*
 
-## 爬虫生成的文件
+# 爬虫生成的文件
 PhpSpiderTest/data/*
+
+# 代码质量管理相关文件
+.scannerwork/*
+sonar-project.properties
 

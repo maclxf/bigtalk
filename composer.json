@@ -12,7 +12,8 @@
         "guzzlehttp/guzzle": "^6.3",
         "owner888/phpspider": "^2.1",
         "phpunit/phpunit": "^7.2",
-        "endroid/qr-code": "^3.2"
+        "endroid/qr-code": "^3.2",
+        "mews/captcha": "^2.2"
     },
     "autoload": {
         "psr-4":{
@@ -32,7 +33,8 @@
             "AbstractFruit\\":["AbstractFactory/Fruit/"],
             "SimpleIntense\\" : ["SimpleIns/"],
             "Component\\":["Component/"],
-            "TIterator\\":["TIterator/"]
+            "TIterator\\":["TIterator/"],
+            "SoldierSimulation\\":["SoldierSimulation/"]
         }
     }
 }
