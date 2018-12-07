@@ -1,0 +1,589 @@
+@charset "utf-8";
+/*-------------------------------  重置清楚  -------------------------------*/
+body {
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+/* 浮动 */
+.fl { float: left;}
+.fr { float: right;}
+
+/* 定位 */
+.pr { position: relative;}
+.pa { position: absolute;}
+.pf { position: fixed;}
+
+/* 清楚浮动 */
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix { *zoom: 1; /* 兼容ie6 */}
+.clearfix:after { clear: both;}
+
+/* 鼠标 */
+.pointer { cursor: pointer;}
+
+.f_weight { font-weight: 700;}
+
+.activity_wrap table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+.activity_wrap table, .activity_wrap th, .activity_wrap td, .activity_wrap tbody, .activity_wrap h1,
+.activity_wrap h2, .activity_wrap h3, .activity_wrap h4, .activity_wrap h5, .activity_wrap p{
+	margin: 0;
+	padding: 0;
+}
+
+.activity_wrap img {
+	display: block;
+	border:0;
+	vertical-align:top;
+}
+
+.activity_wrap i, .activity_wrap cite, .activity_wrap em {
+	font-style:normal;
+}
+
+.activity_wrap ol, .activity_wrap ul{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+
+.activity_wrap input, .activity_wrap button, .activity_wrap select, .activity_wrap textarea, .activity_wrap a {
+	outline:none;
+}
+
+.activity_wrap input {
+	text-decoration: none;
+	list-style: none;
+}
+
+.activity_wrap textarea {
+	overflow:auto;
+	resize:none;
+}
+
+/* 清楚a标签样式 */
+.activity_wrap a, .activity_wrap a:visited {
+	text-decoration:none;
+}
+
+.activity_wrap .hidden {
+	display: none;
+}
+
+.activity_wrap .show {
+	display: block;
+}
+
+/*-------------------------------  END. 重置清除  -------------------------------*/
+
+
+
+/*-------------------------------  公用  -------------------------------*/
+.activity_wrap {
+	background-color: #260645;
+	font-size: 62.5%;
+}
+
+.activity_main_center {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* ------------------------------------- 顶部banner top_banner ----------------------------------*/
+.banner_top_1 { background: url(../images/banner_top_1.jpg) no-repeat center center; height: 120px;}
+.banner_top_2 { background: url(../images/banner_top_2.jpg) no-repeat center center; height: 120px;}
+.banner_top_3 { background: url(../images/banner_top_3.jpg) no-repeat center center; height: 120px;}
+.banner_top_4 { background: url(../images/banner_top_4.jpg) no-repeat center center; height: 120px;}
+.banner_top_5 { background: url(../images/banner_top_5.jpg) no-repeat center center; height: 120px;}
+.banner_top_6 { background: url(../images/banner_top_6.jpg) no-repeat center center; height: 120px;}
+.banner_top_7 { background: url(../images/banner_top_7.jpg) no-repeat center center; height: 181px;}
+
+
+/* ------------------------------------- 底部banner bottom_banner ----------------------------------*/
+.banner_bottom_1 { background: url(../images/banner_bottom_1.png) no-repeat center center; height: 120px;}
+.banner_bottom_2 { background: url(../images/banner_bottom_2.png) no-repeat center center; height: 120px;}
+.banner_bottom_3 { background: url(../images/banner_bottom_3.png) no-repeat center center; height: 120px;}
+.banner_bottom_4 { background: url(../images/banner_bottom_4.png) no-repeat center center; height: 60px;}
+
+
+.back_top_box {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -60px;
+}
+.adi_code {
+	margin-left: 18px;
+}
+
+
+/* ------------------------------------- 侧边栏导航 sidebar  ----------------------------------*/
+.sidebar_nav_wrap {
+	width: 101px;
+	height: 616px;
+	position: fixed;
+	top: 160px;
+	right: 50px;
+	background: url(../images/sidebar_nav_bg.png) no-repeat 0 0;
+}
+
+.sidebar_nav_wrap ul {
+	margin-top: 130px;
+}
+
+.sidebar_nav_wrap ul a {
+	width: 96px;
+	display: inline-block;
+	font-size: 12px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.sidebar_nav_wrap ul .btn_back_top {
+	margin-top: 58px;
+	line-height: 24px;
+}
+
+.sidebar_nav_wrap ul .btn_back_top li{
+	padding-left:10px;
+	background: url(../images/sidebar_top_arrow.png) 24px 3px no-repeat;
+}
+
+
+/* ------------------------------------- 活动首页弹框 mask_pops  ----------------------------------*/
+.mask_pops_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.index_entrance_img_box {
+    width: 600px;
+    height: 320px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    z-index: 2001;
+}
+
+.btn_img_close {
+    position: absolute;
+    width: 4%;
+    top: 2px;
+    right: 20px;
+}
+
+
+/* ------------------------------------- 规则说明 rule ----------------------------------*/
+.prompt_wrap {
+	width: 690px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+    z-index: 2001;
+}
+
+.prompt_bg_top { background: url(../images/rule_bg_top.png) no-repeat 0 0; height: 12px; }
+.prompt_bg_center_left { background: url(../images/rule_bg_4.png) no-repeat 0 0; height: 300px; width: 12px;}
+.prompt_bg_center_right { background: url(../images/rule_bg_2.png) no-repeat 0 0; height: 300px; width: 12px;}
+.prompt_bg_bottom { background: url(../images/rule_bg_bottom.png) no-repeat 0 0; height: 12px;}
+
+/* 页面垂直居中 */
+.prompt_bg_center_content {
+	width: 666px;
+	background-color: #ffe49c;
+	padding-bottom: 20px;
+	color: #4d4d4d;
+}
+
+.prompt_bg_center_content > h4 {
+	padding-left: 20px;
+	line-height: 50px;
+	font-size: 24px;
+	padding-top: 10px;
+}
+
+.prompt_bg_center_content > p {
+	padding: 0 15px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.btn_close_pops {
+	position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+}
+
+
+/* -------------------- 盲拍 auction ----------------------------- */
+.activity_wrap {
+	background-color: #260645;
+}
+
+.auction_lottery_title { background: url(../images/auction_lottery_title.png) no-repeat 0 0; height: 68px;}
+
+.main_content_bg {
+	margin-top: 4px;
+	background: url(../images/main_content_top.png) no-repeat 0 top;
+	background-color: #983ffb;
+	border-radius: 20px 20px 60px 60px;
+}
+
+.auction_lottery_centent { height: 660px;}
+
+.auction_title_box {
+	width: 1120px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.auction_data_nav { width: 900px;}
+
+.auction_data_nav li {
+	float: left;
+	width: 298px;
+	height: 49px;
+	line-height: 49px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 2px 1px;
+	background-color: #6523ae;
+	cursor: pointer;
+}
+
+.auction_data_nav li:nth-of-type(3){
+	border-radius: 0 49px 0 0;
+}
+
+.auction_data_nav li:nth-of-type(6){
+	border-radius: 0 0 49px 0;
+}
+
+.auction_data_nav .current {
+	color: #fcf504;
+	font-weight: 700;
+	background: none;
+}
+
+.auction_rule {
+	font-size: 16px;
+	color: #fcf504;
+	font-weight: 700;
+	margin-left: 72px;
+	line-height: 48px;
+}
+
+
+
+/* 产品内容 */
+.auction_left_box {
+	width: 560px;
+	height: 424px;
+	border: 2px solid #822d9b;
+	border-radius: 12px;
+	margin-left: 25px;
+	position: relative;
+}
+
+.product_name_box {
+	height: 100px;
+	width: 206px;
+	text-align: left;
+	color: #fff;
+	padding-left: 20px;
+}
+
+.product_name_box > p {
+	font-size: 12px;
+}
+
+.product_name_box > span {
+	font-size: 12px;
+}
+
+.auction_product_img {
+	margin: 16px 0 0 12px;
+}
+
+.auction_price_box {
+	padding-left: 20px;
+}
+
+.auction_price_box span:first-child {
+	font-size: 12px;
+}
+
+.auction_price {
+	font-size: 24px;
+	line-height: 30px;
+	display: inline-block;
+	background-color: #fcf504;
+	border-radius: 10px;
+	color: #ff0000;
+	padding: 0 10px;
+}
+
+.auction_price_samll {
+	font-size: 14px;
+	color: #ff0000;
+}
+
+.auction_product_right {
+	float: right;
+	width: 278px;
+	height: 394px;
+	margin-top: 17px;
+	margin-right: 20px;
+	background: url(../images/auction_product_right_bg.png) no-repeat 0 0;
+}
+
+/*数据详情图标*/
+.auction_data_iocn_box {
+	height: 52px;
+}
+
+.auction_data_iocn_box > img{
+	float: left;
+	margin: 15px 0;
+}
+
+.auction_data_iocn_box .auction_time_icon {
+	margin-left: 20px;
+}
+
+.auction_data_iocn_box .auction_name_icon {
+	margin-left: 78px;
+	margin-right: 78px;
+}
+
+/*数据详情盒子*/
+.auction_date_detail_box {
+	width: 90%;
+	height: 240px;
+	padding: 6px 11px;
+	color: #fff;
+	font-size: 12px;
+}
+
+.auction_date_detail_box td {
+	padding: 4px 0;
+}
+
+.auction_money_box {
+	margin-top: 48px;
+}
+
+.auction_money {
+	float: left;
+	position: relative;
+}
+
+.auction_money > input {
+	width: 180px;
+	height: 30px;
+	background: none;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding-left: 15px;
+	color: #fff;
+	margin-left: 10px;
+}
+
+.auction_money > img {
+	position: absolute;
+	top: 0;
+	right: 0px;
+}
+
+.recharge_btn {
+	float: right;
+	margin-right: 10px;
+}
+
+.auction_data_none {
+	width: 100%;
+	height: 240px;
+	background: url(../images/auction_img_produnt_date_none.png) no-repeat center center;
+}
+
+.auction_time_detail {
+	text-align: left;
+	padding-left: 5px;
+}
+
+.auction_name_detail {
+	text-align: center;
+}
+
+.auction_money_detail {
+	text-align: right;
+	padding-right: 5px;
+}
+
+/* 图片中心放大 */
+.product_img {
+	width: 220px;
+	height: 240px;
+	overflow: hidden;
+}
+
+.product_img > img {
+	transition: all 1.6s ease;
+}
+.product_img:hover > img {
+	transform: scale(1.2);
+}
+
+
+.column_content {
+	margin-top: 30px;
+	height: 200px;
+	background-color: #000;
+	font-size: 48px;
+	color: #fff;
+	text-align: center;
+	line-height: 200px;
+}
+
+/* 登录框 */
+.info_prompt_wrap, .login_wrap {
+	width: 460px;
+	background-color: #fff;
+	position: fixed;
+	z-index: 2001;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.login_content {
+	margin: 30px 0;
+	min-height: 130px;
+
+}
+
+.user_name_box, .user_paw_box, .user_login_box {
+	margin-top: 20px;
+	margin-left: 60px;
+	position: relative;
+}
+
+.user_name, .user_pwd, .user_login {
+	width: 100px;
+	height: 28px;
+	text-align: right;
+	line-height: 28px;
+	font-size: 14px;
+	color: #0066cb;
+}
+
+.user_name_box input, .user_paw_box input {
+	width: 145px;
+	padding: 0;
+	margin: 0;
+	height: 28px;
+	border: 1px solid #0066cb;
+	padding-left: 6px;
+	padding-right: 24px;
+}
+
+.btn_login {
+	width: 177px;
+	height: 30px;
+	color: #fff;
+	line-height: 26px;
+	text-align: center;
+	border: none;
+	border-top: 3px solid #408CD8;
+	background-color: #0066cb;
+}
+
+.btn_close_info_prompt {
+	top: 6px;
+	right: 6px;
+}
+
+.user_name_clear, .user_pwd_clear {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	cursor: pointer;
+	background: url(../images/clear_user.png) 0 0 no-repeat;
+}
+
+.user_name_clear, .user_pwd_clear {
+	top: 10px;
+	right: 131px;
+}
+
+/* 注册 */
+.btn_registration {
+	margin-left: 289px;
+	line-height: 28px;
+	color: #0066cb;
+}
+
+.info_prompt_content {
+	margin: 20px 0;
+}
+
+.info_prompt_content h4 {
+	text-align: center;
+	font-size: 18px;
+}
+
+.info_prompt_content p {
+	font-size: 14px;
+	line-height: 21px;
+	padding: 20px 20px;
+	min-height: 60px;
+}
+
+.prompt_content_btn_box {
+	margin-left: 190px;
+}
+
+.info_prompt_content em {
+	display: inline-block;
+	width: 100px;
+	height: 36px;
+	font-size: 16px;
+	line-height: 34px;
+	text-align: center;
+	margin-left: 20px;
+	border: 1px solid #000;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.info_prompt_content em:nth-of-type(2) {
+	background: #0066cb;
+	color: #fff;
+	border: none;
+}

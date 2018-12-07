@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="./style/jquery-confirm.min.css">
+	<script src="./js/jquery-3.2.1.js"></script>
+	<script src="./js/jquery-confirm.min.js"></script>
+	<style type="text/css">
+		.wrap {
+			background-color:#0066CB;
+			min-height:300px;
+			color:#fff;
+		}
+		.wrap div {
+			padding:30px;
+			border-bottom: 2px dashed black
+		}
+		.wrap button {
+			color: white;
+			border: 0px;
+			display: inline-block;
+			height: 60px;
+			text-shadow: 1px 1px 0 #555;
+			box-shadow: 2px 2px 1 #666;
+		}
+		.blue {
+			background-color: blue
+		}
+		.orange {
+			background-color: #fbb01f
+		}
+		.green {
+			background-color: green
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div>
+			<h1>alert 弹窗测试</h1>
+			<button id="alert" class="blue">this is alert</button>
+		</div>
+
+		<div>
+			<h1>confirm 弹窗测试</h1>
+			<button id="confirm" class="orange">this is confirm</button>
+		</div>
+
+		<div>
+			<h1>dialog 弹窗测试</h1>
+			<button id="dialog" class="green">this is dialog</button>
+		</div>
+	</div>
+
+
+</body>
+
+<script type="text/javascript">
+	// 禁用bootstrap 这样我可以不引用 bunlde 那个样式文件，但是为什么引了那个进来居然bootstrap 和 font-awsome可以用了？？？
+	jconfirm.pluginDefaults.useBootstrap = false;
+	// 有些动画效果需要这个控件来操作
+	jconfirm.pluginDefaults.animateFromElement = false;
+	$('#alert').click(function() {
+		$.alert({
+		    title: 'I`m Title!',
+		    content: 'I`m content XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+			boxWidth: '30%',
+			type: 'blue',
+		    animation: 'zoom',
+		    closeAnimation: 'scale',
+		    buttons: {
+	        ok: {
+		            text: "ok!",
+		            btnClass: 'btn-blue',
+		            keys: ['enter'],
+		            action: function(){
+		                 console.log('the user clicked confirm');
+		            }
+		        },
+		    }
+		});
+	});
+
+	$('#confirm').click(function() {
+		$.confirm({
+			buttons: {
+		        hello: function(helloButton){
+		            // shorthand method to define a button
+		            // the button key will be used as button name
+		        },
+		        hey: function(heyButton){
+		            // access the button using jquery
+		            this.$$hello.trigger('click'); // click the 'hello' button
+		            this.$$hey.prop('disabled', true); // disable the current button using jquery method
+
+		            // jconfirm button methods, all methods listed here
+		            this.buttons.hello.setText('Helloooo'); // setText for 'hello' button
+		            this.buttons.hey.disable(); // disable with button function provided by jconfirm
+		            this.buttons.hey.enable(); // enable with button function provided by jconfirm
+		            // the button's instance is passed as the first argument, for quick access
+		            heyButton === this.buttons.hey;
+		        },
+		        heyThere: {
+		            text: 'Hey there!', // text for button
+		            btnClass: 'btn-blue', // class for the button
+		            keys: ['enter', 'a'], // keyboard event for button
+		            isHidden: false, // initially not hidden
+		            isDisabled: false, // initially not disabled
+		            action: function(heyThereButton){
+		                // longhand method to define a button
+		                // provides more features
+		            }
+		        },
+		    }
+		});
+	});
+
+	$('#dialog').click(function() {
+		$.dialog({
+		    title: 'What is up?',
+		    boxWidth: '30%',
+		    content: 'Here goes a little content',
+		    type: 'blue', // 'material', 'bootstrap',
+		    buttons: {
+		        ok: {
+		            text: "ok!",
+		            btnClass: 'btn-primary',
+		            keys: ['enter'],
+		            action: function(){
+		                 console.log('the user clicked confirm');
+		            }
+		        },
+		        cancel: function(){
+		                console.log('the user clicked cancel');
+		        }
+		    }
+		});
+	});
+
+
+	/*var a = $.confirm({
+	    lazyOpen: true,
+	});
+	a.open();
+	a.close();
+	a.toggle(); // toggle open close.*/
+
+</script>
+</html>
