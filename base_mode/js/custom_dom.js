@@ -17,7 +17,6 @@ var custom_dom = {
      * 找到被填充的容器，找到填充的内容，将内容装进容器
      * @author lxf 2018-12-06
      * @param  {[type]} selector                  触发切换按钮
-     * @param  {String} filled_container_selector 填充容器
      * @return {[type]}                           [description]
      */
     switch_button: function(selector, filled_container_selector = '') {
@@ -25,21 +24,59 @@ var custom_dom = {
 	        return this;
 	    }
 		selector.addClass('current').siblings().removeClass('current');
+    },
 
+    /**
+     * 将内容填充到容器中
+     * @author lixiaofeng 2018-12-08
+     * @param  {[type]} container_selector        容器
+     * @param  {String} content_selector          填充内容
+     * @return {[type]}                           [description]
+     */
+    fill_container: function(container_selector, content_selector = '') {
+        if (container_selector === null) {
+            return this;
+        }
 
-		if (filled_container_selector) {
-			// 容器
-			filled_container_selector = typeof filled_container_selector === 'string' ? $(filled_container_selector) : filled_container_selector;
-			if (filled_container_selector.length > 1) {
-				// 内容
-				content_selector = selector.data('content');
-				content_selector = typeof content_selector === 'string' ? $(content_selector) : content_selector;
+        // 容器
+        container_selector = typeof container_selector === 'string' ? $(container_selector) : container_selector;
+        if (container_selector.length < 1) {
+            return this;
+        }
 
-				// 填充内容
-				filled_container_selector.html(content_selector.html());
-			}
-		}
+        // 内容
+        content_selector = typeof content_selector === 'string' ? $(content_selector) : content_selector;
 
+        // 填充内容
+        container_selector.html(content_selector.html());
+    },
+
+    /**
+     * [prompt_notice description]
+     * @author lixiaofeng 2018-12-08
+     * @param  {[type]}  notice_selector [description]
+     * @param  {Boolean} title           [description]
+     * @param  {String}  width           [description]
+     * @param  {String}  type            [description]
+     * @return {[type]}                  [description]
+     */
+    prompt_notice: function(notice_selector, title = false, width = '30%', type = 'blue') {
+        if (notice_selector === null) {
+            return this;
+        }
+
+        notice_selector = typeof notice_selector === 'string' ? $(notice_selector) : notice_selector;
+
+        if (notice_selector.length < 1) {
+            return this;
+        }
+
+        $.dialog({
+            title : title,
+            content : notice_selector.html(),
+            boxWidth: width,
+            type: type,
+        });
     },
 
     /**
@@ -48,7 +85,7 @@ var custom_dom = {
      * @param text
      * @returns {_dom_deps}
      */
-    enable_button: function(selector, text) {
+    /*enable_button: function(selector, text) {
         if (selector === null) {
             return this;
         }
@@ -65,7 +102,7 @@ var custom_dom = {
         }
 
         return this;
-    },
+    },*/
 
     /**
      * 禁用按钮
@@ -73,7 +110,7 @@ var custom_dom = {
      * @param text
      * @returns {_dom_deps}
      */
-    disable_button: function(selector, text) {
+    /*disable_button: function(selector, text) {
         if (selector === null) {
             return this;
         }
@@ -90,6 +127,5 @@ var custom_dom = {
         }
 
         return this;
-    },
-
+    },*/
 }
