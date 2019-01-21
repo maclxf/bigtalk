@@ -1,13 +1,13 @@
 <?php
-require_once('save_the_world/SuperModuleInterface.php');
-require_once('save_the_world/Container.php');
+require_once 'save_the_world/SuperModuleInterface.php'
+require_once 'save_the_world/Container.php';
 
 // 创建一个容器（后面称作超级工厂）
 $container = new Container;
 
 // 向该 超级工厂添加超人的生产脚本
 $container->bind('superman', function($container, $moduleName) {
-    var_dump($container);
+        var_dump($container);
     var_dump($moduleName);
 
     return new Superman($container->make($moduleName));
