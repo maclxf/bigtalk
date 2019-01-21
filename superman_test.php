@@ -14,7 +14,7 @@ $container->bind('superman', function($container, $moduleName) {
 });
 $container->bind('love', function($container) {
     return new Love;
-});
+})
 
 $container->show();
 $superman_4 = $container->make('superman', array('love'));
