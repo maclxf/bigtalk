@@ -1,5 +1,4 @@
 <?php
-
 class UserModel
 {
     public function login($username = '', $password = '')
