@@ -6,13 +6,13 @@ require_once 'save_the_world/Container.php';
 $container = new Container;
 
 // 向该 超级工厂添加超人的生产脚本
-$container->bind('superman', function($container, $moduleName) {
-        var_dump($container);
+$container->bind('superman', function ($container, $moduleName) {
+    var_dump($container);
     var_dump($moduleName);
 
     return new Superman($container->make($moduleName));
 });
-$container->bind('love', function($container) {
+$container->bind('love', function ($container) {
     return new Love;
 })
 
@@ -22,12 +22,12 @@ $superman_4->fight();
 exit;
 
 // 向该 超级工厂添加超能力模组的生产脚本
-$container->bind('xpower', function($container) {
+$container->bind('xpower', function ($container) {
     return new XPower;
 });
 
 // 同上
-$container->bind('ultrabomb', function($container) {
+$container->bind('ultrabomb', function ($container) {
     return new UltraBomb;
 });
 

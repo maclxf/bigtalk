@@ -14,7 +14,10 @@
         "phpunit/phpunit": "^7.2",
         "endroid/qr-code": "^3.2",
         "jjonline/aliyun-dysms-php-sdk": "2.0",
-        "mrgoon/aliyun-sms": "^2.0"
+        "mrgoon/aliyun-sms": "^2.0",
+        "symfony/flex": "^1.2",
+        "jmose/command-scheduler-bundle": "^2.0",
+        "hellogerard/jobby": "^3.4"
     },
     "autoload": {
         "psr-4":{
@@ -36,6 +39,17 @@
             "Component\\":["Component/"],
             "TIterator\\":["TIterator/"],
             "SoldierSimulation\\":["SoldierSimulation/"]
+        }
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": "true"
+        }
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
         }
     }
 }
