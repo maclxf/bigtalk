@@ -59,6 +59,9 @@
     "doctrine/reflection": {
         "version": "v1.0.0"
     },
+    "easywechat-composer/easywechat-composer": {
+        "version": "1.1.6"
+    },
     "egulias/email-validator": {
         "version": "2.1.7"
     },
@@ -84,11 +87,23 @@
             "config/routes/scheduler.yaml"
         ]
     },
+    "monolog/monolog": {
+        "version": "1.24.0"
+    },
     "mtdowling/cron-expression": {
         "version": "v1.2.1"
     },
     "nikic/php-parser": {
         "version": "v4.2.1"
+    },
+    "overtrue/socialite": {
+        "version": "2.0.8"
+    },
+    "overtrue/wechat": {
+        "version": "4.1.25"
+    },
+    "pimple/pimple": {
+        "version": "v3.2.3"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -214,6 +229,9 @@
     },
     "symfony/process": {
         "version": "v4.2.5"
+    },
+    "symfony/psr-http-message-bridge": {
+        "version": "v1.2.0"
     },
     "symfony/routing": {
         "version": "4.2",

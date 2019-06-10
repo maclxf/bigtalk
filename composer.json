@@ -17,7 +17,8 @@
         "mrgoon/aliyun-sms": "^2.0",
         "symfony/flex": "^1.2",
         "jmose/command-scheduler-bundle": "^2.0",
-        "hellogerard/jobby": "^3.4"
+        "hellogerard/jobby": "^3.4",
+        "overtrue/wechat": "^4.1"
     },
     "autoload": {
         "psr-4":{
