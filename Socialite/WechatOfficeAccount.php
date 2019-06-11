@@ -40,6 +40,29 @@ class WechatOfficeAccount {
         var_dump($blacklist);
     }
 
+    public function getTemplateMessages() {
+        $templates = $this->app->template_message->getPrivateTemplates();
+        var_dump($templates);
+    }
+
+    public function sendTemplate() {
+        $ret = $this->app->template_message->send([
+            'touser' => 'onQMzwP34Dj5iNxdDjOlaKJt6Omc',
+            'template_id' => 'sHGMPXZNKv0ZTxIQV-99La-UgFAr-52-j0eDIvVBxkU',
+            'url' => 'http://maclxf.github.io',
+            'data' => [
+                'name' => '黎晓峰',
+                'ad' => date('Y-m-d'),
+            ],
+
+            /*'data' => [
+                'name' => ['黎晓峰', 'blue'],
+                'ad' => ['value' => date('Y-m-d'), 'color' => 'red'],
+            ],*/
+        ]);
+
+        var_dump($ret);
+    }
     /*************************************************************************/
     //构造微信jsdk的微信配置
     //https://www.easywechat.com/docs/4.1/basic-services/jssdk
