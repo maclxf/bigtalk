@@ -1,5 +1,5 @@
 <?php
-sleep(3);
+
 if ($_GET['name'] != 'lxf') {
     echo json_encode([
         'ret' => FALSE,

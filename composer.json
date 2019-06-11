@@ -14,7 +14,17 @@
         "phpunit/phpunit": "^7.2",
         "endroid/qr-code": "^3.2",
         "jjonline/aliyun-dysms-php-sdk": "2.0",
-        "mrgoon/aliyun-sms": "^2.0"
+        "mrgoon/aliyun-sms": "^2.0",
+        "jmose/command-scheduler-bundle": "^2.0",
+        "hellogerard/jobby": "^3.4",
+        "mpdf/mpdf": "^8.0",
+        "dompdf/dompdf": "^0.8.3",
+        "tecnickcom/tcpdf": "^6.2",
+        "knplabs/knp-snappy": "^1.1",
+        "wemersonjanuario/wkhtmltopdf-windows": "0.12.x",
+        "h4cc/wkhtmltopdf-amd64": "0.12.x",
+        "google/recaptcha": "^1.2",
+        "gregwar/captcha": "^1.1"
     },
     "autoload": {
         "psr-4":{
@@ -36,6 +46,11 @@
             "Component\\":["Component/"],
             "TIterator\\":["TIterator/"],
             "SoldierSimulation\\":["SoldierSimulation/"]
+        }
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": "true"
         }
     }
 }

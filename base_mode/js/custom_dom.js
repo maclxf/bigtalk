@@ -19,7 +19,7 @@ var custom_dom = {
      * @param  {[type]} selector                  触发切换按钮
      * @return {[type]}                           [description]
      */
-    switch_button: function(selector, filled_container_selector = '') {
+    switch_button: function(selector) {
 		if (selector === null || typeof selector === 'string') {
 	        return this;
 	    }
