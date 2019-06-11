@@ -32,3 +32,12 @@ PhpSpiderTest/data/*
 .scannerwork/*
 sonar-project.properties
 
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###

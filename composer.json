@@ -15,8 +15,10 @@
         "endroid/qr-code": "^3.2",
         "jjonline/aliyun-dysms-php-sdk": "2.0",
         "mrgoon/aliyun-sms": "^2.0",
+        "symfony/flex": "^1.2",
         "jmose/command-scheduler-bundle": "^2.0",
         "hellogerard/jobby": "^3.4",
+        "overtrue/wechat": "^4.1",
         "mpdf/mpdf": "^8.0",
         "dompdf/dompdf": "^0.8.3",
         "tecnickcom/tcpdf": "^6.2",
@@ -51,6 +53,12 @@
     "extra": {
         "symfony": {
             "allow-contrib": "true"
+        }
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
         }
     }
 }
