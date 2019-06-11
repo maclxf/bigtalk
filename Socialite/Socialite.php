@@ -1,5 +1,5 @@
 <?php
-namespace /Socialite;
+namespace Socialite;
 
 abstract class Socialite {
 
@@ -12,7 +12,13 @@ abstract class Socialite {
                 'callback' => 'callback/oauth2_callback',
             ],
             // 指定 API 调用返回结果的类型：array(default)/collection/object/raw/自定义类名
-            'response_type' => 'array',
+            //'response_type' => 'array',
+            'oauth' => [
+                'scopes'   => ['snsapi_userinfo'],
+                'callback' => 'wechat/wechatOuath',
+            ],
         ];
+
+
     }
 }

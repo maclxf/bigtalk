@@ -47,7 +47,8 @@
             "SimpleIntense\\" : ["SimpleIns/"],
             "Component\\":["Component/"],
             "TIterator\\":["TIterator/"],
-            "SoldierSimulation\\":["SoldierSimulation/"]
+            "SoldierSimulation\\":["SoldierSimulation/"],
+            "Socialite\\":["Socialite/"]
         }
     },
     "extra": {

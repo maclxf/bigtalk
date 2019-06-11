@@ -1,4 +1,7 @@
 <?php
-require_once('Socialite/WechatOfficeAccount.php');
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Socialite\WechatOfficeAccount;
+
 $wechat = new WechatOfficeAccount();
-$wechat->getUser();
+$wechat->getDataCube();
