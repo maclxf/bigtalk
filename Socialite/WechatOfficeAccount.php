@@ -15,6 +15,30 @@ class WechatOfficeAccount {
         $this->app = Factory::officialAccount($config);
     }
 
+    public function getOauth() {
+        return $this->app->oauth;
+    }
+
+    public function doOauth() {
+        $oauth = $this->getOauth();
+
+        $oauth->redirect()->send();
+    }
+
+    public function getTargetUrl() {
+        $oauth = $this->getOauth();
+
+        $response = $oauth->redirect();
+
+        return urldecode($response->getTargetUrl());
+    }
+
+    public function getOauthUser() {
+        $oauth = $this->getOauth();
+
+        return $oauth->user();
+    }
+
     /********************************************************/
     /**
      * https://www.easywechat.com/docs/4.1/official-account/user
@@ -46,6 +70,24 @@ class WechatOfficeAccount {
     }
 
     public function sendTemplate() {
+        for ($i=0; $i < 50; $i++) {
+            $ret = $this->app->template_message->send([
+                'touser' => 'onQMzwP34Dj5iNxdDjOlaKJt6Omc',
+                'template_id' => 'sHGMPXZNKv0ZTxIQV-99La-UgFAr-52-j0eDIvVBxkU',
+                'url' => 'http://maclxf.github.io',
+                'data' => [
+                    'name' => 'who + ' . $i,
+                    'ad' => date('Y-m-d H:i:s'),
+                ],
+
+                /*'data' => [
+                    'name' => ['黎晓峰', 'blue'],
+                    'ad' => ['value' => date('Y-m-d'), 'color' => 'red'],
+                ],*/
+            ]);
+
+            var_dump($ret);
+        }
         $ret = $this->app->template_message->send([
             'touser' => 'onQMzwP34Dj5iNxdDjOlaKJt6Omc',
             'template_id' => 'sHGMPXZNKv0ZTxIQV-99La-UgFAr-52-j0eDIvVBxkU',

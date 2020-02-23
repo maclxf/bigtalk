@@ -26,7 +26,13 @@
         "wemersonjanuario/wkhtmltopdf-windows": "0.12.x",
         "h4cc/wkhtmltopdf-amd64": "0.12.x",
         "google/recaptcha": "^1.2",
-        "gregwar/captcha": "^1.1"
+        "gregwar/captcha": "^1.1",
+        "kreait/firebase-tokens": "^1.9",
+        "firebase/php-jwt": "^5.0",
+        "easywechat-composer/easywechat-composer": "1.1.6",
+        "9yu/convert2romaji": "^1.3",
+        "zendframework/zend-permissions-rbac": "^3.0",
+        "jeremy-dunn/php-fedex-api-wrapper": "^3.0"
     },
     "autoload": {
         "psr-4":{

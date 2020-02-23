@@ -1,5 +1,7 @@
 <?php
 require_once('Toolise/Helper.php');
+
+var_dump(rand_pswd());
 $item = [
 	'pos' => 'CQ'
 ];
