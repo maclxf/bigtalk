@@ -126,6 +126,12 @@
     "overtrue/wechat": {
         "version": "4.1.25"
     },
+    "php-amqplib/php-amqplib": {
+        "version": "v2.11.0"
+    },
+    "phpseclib/phpseclib": {
+        "version": "2.0.24"
+    },
     "pimple/pimple": {
         "version": "v3.2.3"
     },
