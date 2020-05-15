@@ -46,6 +46,24 @@ class WechatOfficeAccount {
     }
 
     public function sendTemplate() {
+        for ($i=0; $i < 50; $i++) {
+            $ret = $this->app->template_message->send([
+                'touser' => 'onQMzwP34Dj5iNxdDjOlaKJt6Omc',
+                'template_id' => 'sHGMPXZNKv0ZTxIQV-99La-UgFAr-52-j0eDIvVBxkU',
+                'url' => 'http://maclxf.github.io',
+                'data' => [
+                    'name' => 'who + ' . $i,
+                    'ad' => date('Y-m-d H:i:s'),
+                ],
+
+                /*'data' => [
+                    'name' => ['黎晓峰', 'blue'],
+                    'ad' => ['value' => date('Y-m-d'), 'color' => 'red'],
+                ],*/
+            ]);
+
+            var_dump($ret);
+        }
         $ret = $this->app->template_message->send([
             'touser' => 'onQMzwP34Dj5iNxdDjOlaKJt6Omc',
             'template_id' => 'sHGMPXZNKv0ZTxIQV-99La-UgFAr-52-j0eDIvVBxkU',
@@ -114,7 +132,14 @@ class WechatOfficeAccount {
     }
 
 
+    public function createQrcode() {
+        $result = $this->app->qrcode->temporary('foo', 6 * 24 * 3600);
+        echo 'url : '. $result['url'] . '过期时间：' . $result['expire_seconds'] . PHP_EOL;
 
+        $url = $this->app->qrcode->url($result['ticket']);
+
+        echo $url;
+    }
 }
 
 

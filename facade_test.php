@@ -12,5 +12,7 @@ $facade = new Facade();
 $facade = new Facade\Facade();*/
 
 $facade->shoot();
+
+$facade->
 echo '<br>';
 $facade->run();

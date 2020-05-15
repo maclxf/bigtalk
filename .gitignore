@@ -21,6 +21,7 @@ ci_ide_helper.php
 
 # 程序日志
 log/*
+deploy.php
 
 # composer库文件
 vendor/*
