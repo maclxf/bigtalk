@@ -3,7 +3,7 @@
 abstract class I_deep_archetype {
     private $workdate;
     private $company;
-.
+
     public function setworkdate($workdate) {
         $this->workdate = $workdate;
         return $this->workdate;

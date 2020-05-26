@@ -11,10 +11,13 @@ $connection = $factory->get();
 $channel = $connection->channel();
 
 // 创建队列声明
-$channel->queue_declare('hello',false,false,false,false);
+//$channel->queue_declare('hello',false,false,false,false);
 
 $msg = new AMQPMessage('Hello World!');
 $channel->basic_publish($msg, '', 'hello');
+
+$channel->basic_publish();
+
 
 echo " [x] Sent 'Hello World!'\n";
 

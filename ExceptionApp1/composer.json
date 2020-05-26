@@ -1,0 +1,13 @@
+{
+    "name": "adi/exception-app",
+    "authors": [
+        {
+            "name": "lxf",
+            "email": "46905313@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"App\\": "."}
+    },
+    "require": {}
+}
