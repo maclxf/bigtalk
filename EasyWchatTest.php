@@ -10,3 +10,9 @@ echo '<pre>';
     echo $e->getMessage();
 }
 
+
+//$wechat = new WechatOfficeAccount();
+
+//$url = $wechat->getTargetUrl();
+
+//echo json_encode(['url' => $url]);

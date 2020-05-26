@@ -41,4 +41,5 @@ sonar-project.properties
 /public/bundles/
 /var/
 /vendor/
+.history/
 ###< symfony/framework-bundle ###

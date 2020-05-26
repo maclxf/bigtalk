@@ -1,0 +1,25 @@
+#! /usr/bin/env php
+
+<?php
+
+use Limelight\Limelight;
+
+require __DIR__ . '/vendor/autoload.php';
+
+$input = (isset($argv[1]) ? $argv[1]: 'こんにちは');
+
+$method = (isset($argv[2]) ? $argv[2] : null);
+
+$flag = (isset($argv[3]) ? $argv[3] : null);
+
+$limelight = new Limelight();
+
+$results = $limelight->parse($input);
+
+if ($method && $flag) {
+    var_dump($results->$flag()->$method()) . "\n";
+} else if ($method) {
+    var_dump($results->$method()) . "\n";
+} else {
+    var_dump($results);
+}

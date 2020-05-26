@@ -15,6 +15,30 @@ class WechatOfficeAccount {
         $this->app = Factory::officialAccount($config);
     }
 
+    public function getOauth() {
+        return $this->app->oauth;
+    }
+
+    public function doOauth() {
+        $oauth = $this->getOauth();
+
+        $oauth->redirect()->send();
+    }
+
+    public function getTargetUrl() {
+        $oauth = $this->getOauth();
+
+        $response = $oauth->redirect();
+
+        return urldecode($response->getTargetUrl());
+    }
+
+    public function getOauthUser() {
+        $oauth = $this->getOauth();
+
+        return $oauth->user();
+    }
+
     /********************************************************/
     /**
      * https://www.easywechat.com/docs/4.1/official-account/user

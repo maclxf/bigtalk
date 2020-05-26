@@ -1,0 +1,80 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>抽奖插件前端制作</title>
+</head>
+<style type="text/css">
+*{margin:0; padding:0; font-size:14px;}
+body{text-align: center; background-color: #1664ad;}
+#main_bg{border:0px solid black;width:510px; margin:0 auto;}
+#rotate-bg{position:relative; background:url(rorate/images/rotate-bg.png) no-repeat; height:510px; width:510px; margin:0 auto;}
+#rotate_static{position:absolute; top:148px; left:148px; cursor:pointer;}
+</style>
+<script type="text/javascript" src="rorate/js/jquery.min.js"></script>
+<script type="text/javascript" src="rorate/js/jqueryrotate.2.2.js"></script>
+<script type="text/javascript" src="rorate/js/jquery.easing.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(document).on("click", "#imgbutton", function(){
+		sub();
+	});
+});
+function sub(){
+	$.ajax({
+		type:'POST',
+		url:'rorate/data.php',
+		dataType:'json',
+		cache:false,
+		error:function(){
+			alert('出错了');
+			return false;
+		},
+		success:function(rs){
+			console.log(rs);
+			//{angle: 145, prize: "一等奖", rid: 1}
+
+			$("#imgbutton").unbind('click').css('cursor','default');
+			var a = rs.angle;//角度
+			var p = rs.prize; //奖项
+			var rid = rs.rid;
+			$("#imgbutton").rotate({
+				duration:5000,//转动时间
+				angle:0,
+				animateTo:1800+a, //转动角度
+				easing: $.easing.easeOutSine,
+				callback: function(){
+					if(rid != 4){
+						var con = confirm('恭喜你，中得'+p+'请在跳转后填写个人信息，以便于我们给你发送奖品！');
+						if(con){
+	                        //window.location('www.talkforex.com');
+	                    }else{
+	                        return false;
+	                    }
+					}else{
+						var con = confirm('很遗憾，下次有可能中奖哦！');
+						if(con){
+	                        sub();
+	                    }else{
+	                        return false;
+	                    }
+					}
+				}
+			});
+		},
+		complete:function() {
+			$("#imgbutton").bind('click').css('cursor','pointer');
+		}
+	});
+}
+</script>
+<body>
+	<div id="main_bg">
+		<div id="rotate-bg">
+			<div id="rotate_static"><img id="imgbutton" src="rorate/images/rotate-static.png"/></div>
+		</div>
+	</div>
+</body>
+
+
