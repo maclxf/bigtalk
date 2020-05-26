@@ -156,7 +156,14 @@ class WechatOfficeAccount {
     }
 
 
+    public function createQrcode() {
+        $result = $this->app->qrcode->temporary('foo', 6 * 24 * 3600);
+        echo 'url : '. $result['url'] . '过期时间：' . $result['expire_seconds'] . PHP_EOL;
 
+        $url = $this->app->qrcode->url($result['ticket']);
+
+        echo $url;
+    }
 }
 
 
