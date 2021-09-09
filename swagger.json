@@ -1,0 +1,99 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a test server adi server.",
+    "version": "1.0.0",
+    "title": "adi mini"
+  },
+  "host": "adi-api.top",
+  "tags": [
+    {
+      "name": "wxLogin",
+      "description": "slient login from wechat"
+    }
+  ],
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/wxLogin": {
+      "post": {
+        "tags": [
+          "wxLogin"
+        ],
+        "summary": "wechat login",
+        "description": "get a code from client to change wechat customer data",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/a"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/b"
+            }
+          },
+          "400": {
+            "description": "Invalid username supplied"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "a": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "format": "string16"
+        }
+      }
+    },
+    "b": {
+      "type": "object",
+      "properties": {
+        "authtoken": {
+          "type": "string",
+          "format": "str16"
+        },
+        "userinfo": {
+          "type": "object"
+        }
+      }
+    },
+    "ApiResponse": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "example": "200"
+        },
+        "data": {
+          "type": "object"
+        },
+        "message": {
+          "type": "string",
+          "example": "success"
+        }
+      }
+    }
+  }
+}
