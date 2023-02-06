@@ -1,5 +1,5 @@
 <?php
-require_once 'save_the_world/SuperModuleInterface.php'
+require_once 'save_the_world/SuperModuleInterface.php';
 require_once 'save_the_world/Container.php';
 
 // 创建一个容器（后面称作超级工厂）
@@ -14,7 +14,7 @@ $container->bind('superman', function ($container, $moduleName) {
 });
 $container->bind('love', function ($container) {
     return new Love;
-})
+});
 
 $container->show();
 $superman_4 = $container->make('superman', array('love'));

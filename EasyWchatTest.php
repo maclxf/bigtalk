@@ -2,17 +2,15 @@
 require_once __DIR__ . '/vendor/autoload.php';
 use Socialite\WechatOfficeAccount;
 try {
-$wechat = new WechatOfficeAccount();
-echo '<pre>';
-
+    $wechat = new WechatOfficeAccount();
     $wechat->createQrcode();
 } catch(\Throwable$e) {
     echo $e->getMessage();
 }
 
 
-//$wechat = new WechatOfficeAccount();
+// $wechat = new WechatOfficeAccount();
 
-//$url = $wechat->getTargetUrl();
+// $url = $wechat->getTargetUrl();
 
-//echo json_encode(['url' => $url]);
+// echo json_encode(['url' => $url]);

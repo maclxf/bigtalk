@@ -144,7 +144,7 @@ function hash_pswd($pswd) {
  * 去除 1 l $
  */
 function rand_pswd($length = 8) {
-	$chars = 'abcdefghijkmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ023456789_^.!';
+	$chars = 'abcdefghijkmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ023456789_^.!$@#^&*-+';
 	$chars = str_shuffle($chars);
 	$randpwd = substr($chars, 0, $length);
 	return $randpwd;

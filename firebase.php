@@ -1,15 +1,15 @@
 <?php
 require_once __DIR__ . './vendor/autoload.php';
 
-use \Limelight\Limelight;
+use \Firebase\JWT\JWT;
 
 
-$key = "SY0pPsFH";
+$key = "qqq";
 $payload = array(
-    "iss" => "http://bigtalk.to2p",
-    "aud" => "http://bigtalk.top",
-    "iat" => 1356999524,
-    "nbf" => 1357000000
+    "iss" => "http://api.gsedu.top",
+            "aud" => "http://mp.gsedu.top",
+            "exp" => time() + 60*60,
+            "sub" => 'kk'
 );
 
 /**
@@ -18,12 +18,15 @@ $payload = array(
  * https://tools.ietf.org/html/draft-ietf-jose-json-web-algorithms-40
  * for a list of spec-compliant algorithms.
  */
+
 $jwt = JWT::encode($payload, $key);
+
+
 echo $jwt;
 //$decoded = JWT::decode($jwt, $key, array('HS256'));
 echo '<br>';
 
-$jwt = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGktYWRpLXYzLnRvcFwvIiwiYXVkIjoiaHR0cDpcL1wvbG9jYWxob3N0OjgwODAiLCJpYXQiOjE1NzU2MzI3NDgsIm5iZiI6MTU3NTYzMjc0OCwiZXhwIjoxNTc1NjMyNzQ5LCJwYXJhbXMiOnsibmFtZSI6IiRcdTVjZjAiLCJoZWFkX2ltZyI6IiRcdTVjZjAifX0.I-VPDAbv9GOA5zK1atwRJ6ulxD1_U6eiYNbwcJjysqM';
+$jwt = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkuZ3NlZHUudG9wIiwiYXVkIjoiaHR0cDpcL1wvbXAuZ3NlZHUudG9wIiwiZXhwIjoxNTk3NzY1NTA4LCJzdWIiOiJrayJ9.OZ5uJY4ESbMcPCxCPz5utCgWUTGhq4qm8L6iqCMy3ko';
 
 /*
  NOTE: This will now be an object instead of an associative array. To get

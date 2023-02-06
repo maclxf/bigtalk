@@ -53,7 +53,9 @@ class WechatOfficeAccount {
     }
 
     public function getUser() {
-        $user = $this->app->user->get('onQMzwHDnSrffRJghFDovtfvuAOA');
+
+        //$user = $this->app->user->get('onQMzwHDnSrffRJghFDovtfvuAOA');
+        $user = $this->app->user->get('o4Fj90cvdBuSKOCZvCcqAcIUR_hE');
 
         var_dump($user);
     }
@@ -148,7 +150,7 @@ class WechatOfficeAccount {
     }
 
     public function getDataCube() {
-        $userSummary = $this->app->data_cube->userSummary('2019-12-07', '2019-01-08');
+        $userSummary = $this->app->data_cube->userSummary('2020-01-07', '2021-01-08');
 
         echo '<pre>';
         var_dump($userSummary);
@@ -157,12 +159,15 @@ class WechatOfficeAccount {
 
 
     public function createQrcode() {
-        $result = $this->app->qrcode->temporary('foo', 6 * 24 * 3600);
-        echo 'url : '. $result['url'] . '过期时间：' . $result['expire_seconds'] . PHP_EOL;
+        $result = $this->app->qrcode->temporary('mac gogogo!!!', 6 * 24 * 3600);
 
         $url = $this->app->qrcode->url($result['ticket']);
 
         echo $url;
+    }
+
+    public function getApp() {
+        return $this->app;
     }
 }
 

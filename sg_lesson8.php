@@ -1,10 +1,12 @@
-<?php
+ <?php
+
 /**
  * Created by PhpStorm.
  * User: mengkang <i@mengkang.net>
  * Date: 2019/3/2 下午5:35
  */
-class BizException extends RuntimeException{
+class BizException extends RuntimeException
+{
 }
 
 /**
@@ -26,7 +28,7 @@ function duplicateCheck($string)
 
 function addUser($nickname)
 {
-    if (wordsCheck($nickname)){
+    if (wordsCheck($nickname)) {
         throw new BizException("昵称非法");
     }
     if (duplicateCheck($nickname)) {
@@ -54,15 +56,14 @@ function addUserBiz($nickname, $teamId)
 }
 function addUserAction()
 {
-    try{
+    try {
         $res = addUserBiz("xxxx", 1);
         echo json_encode(["success" => true, "id" => $res]);
-    }catch (BizException $e){
+    } catch (BizException $e) {
         $res["success"] = false;
         $res['msg'] =  $e->getMessage();
         echo json_encode($res);
     }
-
 }
 
 addUserAction();

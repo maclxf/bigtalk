@@ -2,7 +2,7 @@
 echo 1;
 echo 2;
 
-// 语法 
+// 语法
 // 运行时错误
 // 逻辑
 
@@ -18,18 +18,18 @@ error_reporting(~E_WARNING);
 // 乐观锁 where ver = ver+1 and id = 1
 
 // 读锁
-LOCAK TABLE 表名 READ;
-UNLOCK 表名
+// LOCAK TABLE 表名 READ;
+// UNLOCK 表名
 
-// 写锁
-LOCAK TABLE 表名 WRITE;
-UNLOCK 表名
+// // 写锁
+// LOCAK TABLE 表名 WRITE;
+// UNLOCK 表名
 
-// 终端1
-set autocommit = 0;
-update adi_product set name ='怪兽' where id =14
-commit
+// // 终端1
+// set autocommit = 0;
+// update adi_product set name ='怪兽' where id =14
+// commit
 
-// 终端2
-set autocommit = 0;
-update adi_product set name ='kk' where id =14 //阻塞
+// // 终端2
+// set autocommit = 0;
+// update adi_product set name ='kk' where id =14 //阻塞

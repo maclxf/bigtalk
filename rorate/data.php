@@ -1,6 +1,5 @@
 
 <?php
-array_fi
 //定义抽奖项
 $prize_arr=array(
 	'0' => array('id'=>1,'min'=>137,'max'=>178,'prize'=>'一等奖','v'=>9984),

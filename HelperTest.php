@@ -1,7 +1,27 @@
 <?php
-require_once('Toolise/Helper.php');
+ini_set('display_errors', 'on');
 
-var_dump(rand_pswd());
+
+require_once('Toolise/Helper.php');
+//$foo = new \Ds\Map(["a" => 1, "b" => 2, "c" => 3]);
+//echo $foo->get('d');
+
+$tmpOrder = [
+    'package_cope' => [
+        'a' => 'kk',
+        'b' => 'dd'
+    ],
+    'type'         => 1,
+    'uid'          => 2,
+    'ip'           => '127.0.0.1',
+];
+
+$md5Hash = hash('md5', implode("", $tmpOrder));
+var_dump($md5Hash);
+
+$pswd = rand_pswd();
+var_dump($pswd);
+var_dump(md5($pswd));
 $item = [
 	'pos' => 'CQ'
 ];
@@ -42,11 +62,11 @@ $lock = [
 
 $ret = array_map(null, $color, $memory, $lock);
 
-$phones = array_map(function($phone) {
-	return implode($phone, '-');
-}, $ret);
+// $phones = array_map(function($phone) {
+// 	return implode($phone, '-');
+// }, $ret);
 
-var_dump($phones);
+// var_dump($phones);
 
 //////////////////////////////////////////////////
 

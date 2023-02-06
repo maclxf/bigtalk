@@ -5,7 +5,7 @@
 *                                                              *
 /***************************************************************/
 
-$basedir="../../edockey/shared/config/"; //修改此行为需要检测的目录，点表示当前目录
+$basedir="/mnt/d/Projects/edockey/shared/libraries/Importer/"; //修改此行为需要检测的目录，点表示当前目录
 $auto=1; //是否自动移除发现的BOM信息。1为是，0为否。
 
 //以下不用改动

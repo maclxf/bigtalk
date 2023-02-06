@@ -1,4 +1,36 @@
 {
     "editor.suggest.statusBar.visible": true,
-    "debug.toolBarLocation": "docked"
+    "debug.toolBarLocation": "docked",
+    "cSpell.words": [
+        "aliyun",
+        "autoload",
+        "bigtalk",
+        "dompdf",
+        "dysms",
+        "easywechat",
+        "endroid",
+        "gregwar",
+        "guzzlehttp",
+        "hellogerard",
+        "jjonline",
+        "jmose",
+        "jobby",
+        "knplabs",
+        "kreait",
+        "liftstatustest",
+        "mpdf",
+        "mrgoon",
+        "overtrue",
+        "phpspider",
+        "phpunit",
+        "recaptcha",
+        "romaji",
+        "statuspattern",
+        "symfony",
+        "tcpdf",
+        "tecnickcom",
+        "wemersonjanuario",
+        "wkhtmltopdf",
+        "zendframework"
+    ]
 }

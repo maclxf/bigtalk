@@ -1,6 +1,6 @@
 <?php
 namespace statuspattern;
-use statuspattern\Status
+use statuspattern\Status;
 
 class StatusPass implements Status {
     protected $deal_status;
