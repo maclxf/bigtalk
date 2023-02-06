@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>我是大话设计模式练习项目</title>
     <script>
         const p = new Promise((resolve, reject) => {
             resolve('成功结果')
@@ -28,7 +28,7 @@
 </head>
 <body>
 <?php
-    echo '我是大话设计模式练习项目';
+    phpinfo();
 ?>
 
 </body>
