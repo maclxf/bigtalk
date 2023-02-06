@@ -29,6 +29,7 @@
 <body>
 <?php
     phpinfo();
+    echo '2023-02-06-1';
 ?>
 
 </body>
