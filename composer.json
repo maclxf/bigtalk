@@ -19,7 +19,7 @@
         "jmose/command-scheduler-bundle": "^2.0",
         "hellogerard/jobby": "^3.4",
         "mpdf/mpdf": "^8.0",
-        "dompdf/dompdf": "^0.8.3",
+        "dompdf/dompdf": "^2.0.3",
         "tecnickcom/tcpdf": "^6.2",
         "knplabs/knp-snappy": "^1.1",
         "wemersonjanuario/wkhtmltopdf-windows": "0.12.x",
